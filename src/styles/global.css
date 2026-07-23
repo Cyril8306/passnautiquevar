@@ -222,6 +222,11 @@ details p { margin: 1rem 0 0; font-size: .97rem; color: var(--grey); max-width: 
 .sticky b { display: block; font-family: var(--display); font-size: 1.06rem; text-transform: uppercase; opacity: 1; }
 .sticky .btn { padding: .74rem 1.25rem; font-size: .89rem; background: var(--black); color: var(--yellow); border-color: var(--black); }
 .sticky .btn:hover { transform: none; box-shadow: none; background: #222; }
+.sticky-tel { display: flex; flex-direction: column; line-height: 1.12; text-decoration: none; color: var(--black); }
+.sticky-tel-k { font-family: var(--mono); font-size: .58rem; letter-spacing: .14em; text-transform: uppercase; opacity: .72; }
+.sticky-tel-n { font-family: var(--display); font-size: clamp(1.05rem, 4.5vw, 1.32rem); text-transform: uppercase; letter-spacing: .01em; }
+.hero-tel { margin-top: 1.1rem; font-size: .92rem; color: rgba(255, 255, 255, .72); }
+.hero-tel a { color: var(--yellow); font-weight: 700; text-decoration: none; }
 
 footer { background: var(--coal); color: var(--grey); padding: 3rem 0; font-size: .9rem; border-top: 1px solid var(--line); }
 footer .mark { margin-bottom: 1.2rem; color: var(--white); text-shadow: none; display: inline-block; }

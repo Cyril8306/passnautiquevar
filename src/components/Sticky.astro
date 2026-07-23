@@ -3,7 +3,10 @@ import { site } from '../data/site';
 ---
 <div class="sticky">
   <div class="wrap">
-    <p><b>Venez au comptoir</b>Base de La Gaillarde · Les Issambres</p>
+    <a class="sticky-tel" href={`tel:${site.phoneIntl}`}>
+      <span class="sticky-tel-k">Réserver · appeler</span>
+      <span class="sticky-tel-n">{site.phone}</span>
+    </a>
     <a class="btn" href={site.mapsUrl} target="_blank" rel="noopener">Itinéraire</a>
   </div>
 </div>

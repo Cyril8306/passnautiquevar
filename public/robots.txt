@@ -32,4 +32,4 @@ Allow: /
 User-agent: Bingbot
 Allow: /
 
-Sitemap: https://passnautiquevar.fr/sitemap-index.xml
+Sitemap: https://www.passnautiquevar.fr/sitemap-index.xml

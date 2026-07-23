@@ -6,7 +6,7 @@
 
 export const site = {
   name: 'Pass Nautique Var',
-  domain: 'https://passnautiquevar.fr',
+  domain: 'https://www.passnautiquevar.fr',
   tagline: "Toutes les activités de l'Est-Var, −10 % au comptoir de La Gaillarde.",
 
   // Contact
