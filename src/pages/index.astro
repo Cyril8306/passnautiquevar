@@ -14,7 +14,6 @@ const schema = [
     '@context': 'https://schema.org',
     '@type': 'Organization',
     name: site.name,
-    legalName: site.legalName,
     url: site.domain,
     telephone: site.phoneIntl,
     areaServed: areaServed.map((a) => ({ '@type': 'City', name: a })),

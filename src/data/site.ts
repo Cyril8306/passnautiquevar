@@ -6,7 +6,6 @@
 
 export const site = {
   name: 'Pass Nautique Var',
-  legalName: 'INNOVA-STORE SASU',
   domain: 'https://passnautiquevar.fr',
   tagline: "Toutes les activités de l'Est-Var, −10 % au comptoir de La Gaillarde.",
 
