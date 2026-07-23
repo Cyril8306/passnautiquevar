@@ -1,0 +1,68 @@
+---
+import Base from '../layouts/Base.astro';
+import { site } from '../data/site';
+
+const title = 'Comment ça marche : le bon Pass Nautique Var aux Issambres';
+const description =
+  "Passez au comptoir de La Gaillarde, payez sur place, repartez avec un bon -10 % valable sur les 12 bases nautiques de l'Est-Var. Mode d'emploi.";
+
+const schema = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Accueil', item: site.domain },
+      { '@type': 'ListItem', position: 2, name: 'Comment ça marche', item: `${site.domain}/comment-ca-marche/` },
+    ],
+  },
+];
+
+const content = `
+<p>Le principe tient en une phrase. Vous passez au comptoir, vous payez sur place, vous repartez avec un bon à <strong>-10 %</strong> valable sur toutes les activités des 12 bases du réseau, dans l'Est-Var, d'Agay à Pampelonne. Pas de compte à créer. Pas de réservation en ligne. Voici le détail.</p>
+
+<h2>Les 3 étapes</h2>
+
+<h3>1. Vous passez au comptoir</h3>
+<p>Un seul comptoir : la <strong>Base nautique de La Gaillarde</strong>, sur la plage, aux Issambres. Vous venez, vous choisissez vos activités. Vous n'avez rien à réserver avant. Pas de site à remplir, pas de mot de passe, pas d'e-mail de confirmation à attendre.</p>
+
+<h3>2. Vous payez sur place</h3>
+<p>Le paiement se fait au comptoir. C'est ce passage qui déclenche la remise immédiate de <strong>10 % sur tout le catalogue</strong> des 12 bases. Le même prix, mais 10 % de moins, simplement parce que vous êtes venu ici plutôt que d'acheter en ligne au guichet de chaque base.</p>
+
+<h3>3. Vous repartez avec votre bon</h3>
+<p>On vous remet un <strong>bon</strong> et une <strong>facture</strong>. Le bon n'est pas figé sur une heure précise : vous l'utilisez plus tard, le jour qui vous arrange, sur la base qui opère l'activité choisie.</p>
+
+<h2>Le bon, c'est quoi exactement</h2>
+<p>Le bon, c'est votre droit d'accès à l'activité, déjà payé et déjà remisé. Vous le présentez le jour J sur la bonne base, et c'est réglé.</p>
+<ul>
+<li>Il n'est pas daté à l'heure près : vous choisissez votre moment.</li>
+<li>Il est <strong>offrable</strong>. Cadeau, anniversaire, fin de séjour : vous payez, vous donnez le bon à qui vous voulez.</li>
+<li>Il vaut sur la base qui opère l'activité, partout dans le réseau de l'Est-Var.</li>
+</ul>
+
+<h2>Pourquoi le comptoir plutôt qu'en ligne</h2>
+<p>Parce que c'est moins cher et plus simple. Les 10 % de remise ne s'obtiennent qu'ici, au comptoir. En ligne, vous payez plein tarif, base par base, avec un compte à créer à chaque fois. Ici, un seul passage, un seul interlocuteur, un seul paiement, et la remise sur tout.</p>
+
+<h2>Ce que vous pouvez régler en un seul passage</h2>
+<p>Tout, en une fois. Plusieurs activités et plusieurs personnes sur le même passage au comptoir. Vous organisez la semaine de toute la famille ou du groupe d'un coup.</p>
+<ul>
+<li><strong>Parc aquatique géant</strong> sur le lac de l'Aréna (Roquebrune-sur-Argens) : toboggans, structures gonflables, tyrolienne, espace enfants 2-8 ans. Pass demi-journée ou journée.</li>
+<li><strong>Glisse tractée</strong> : parachute ascensionnel, ski nautique, wakeboard, baby-ski, bouées tractées.</li>
+<li><strong>Bateaux</strong> : bateau sans permis (vous pilotez vous-même, aucun permis requis pour cette catégorie) ou balade avec capitaine (vous êtes passager).</li>
+<li><strong>Au départ de la plage de La Gaillarde</strong> : kayak, paddle, pédalo, scooter sous-marin. Et accrobranche.</li>
+</ul>
+<p>Vous mélangez ce que vous voulez, pour qui vous voulez, sur un seul bon récapitulatif.</p>
+`;
+---
+<Base title={title} description={description} path="/comment-ca-marche/" schema={schema}>
+  <section class="content">
+    <div class="wrap">
+      <p class="eyebrow">Comment ça marche</p>
+      <h1>Le système du bon Pass Nautique Var</h1>
+      <div class="prose" set:html={content}></div>
+      <div class="content-cta">
+        <a class="btn btn-y" href={site.mapsUrl} target="_blank" rel="noopener">Venir au comptoir</a>
+        <a class="btn btn-o" href={`tel:${site.phoneIntl}`}>Appeler le {site.phone}</a>
+      </div>
+    </div>
+  </section>
+</Base>

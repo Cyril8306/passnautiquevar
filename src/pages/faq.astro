@@ -1,0 +1,69 @@
+---
+import Base from '../layouts/Base.astro';
+import { site } from '../data/site';
+import faqData from '../data/faq.json';
+
+const title = 'FAQ — Activités nautiques de La Gaillarde, Les Issambres';
+const description =
+  "Réserver, tarif au comptoir, bon offrable, parc aquatique, parachute, bateau sans permis : les réponses sur les activités nautiques de l'Est-Var, au comptoir de La Gaillarde.";
+
+// FAQPage JSON-LD : UNIQUEMENT les réponses réellement rédigées (les autres renvoient au comptoir).
+const answered = faqData.sections.flatMap((s) => s.items).filter((it) => it.status === 'answered');
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: answered.map((it) => ({
+    '@type': 'Question',
+    name: it.question,
+    acceptedAnswer: { '@type': 'Answer', text: `${it.lead} ${it.dev}` },
+  })),
+};
+const breadcrumb = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Accueil', item: site.domain },
+    { '@type': 'ListItem', position: 2, name: 'FAQ', item: `${site.domain}/faq/` },
+  ],
+};
+const schema = [faqSchema, breadcrumb];
+---
+<Base title={title} description={description} path="/faq/" schema={schema}>
+  <section class="content faqpage">
+    <div class="wrap">
+      <p class="eyebrow">Questions fréquentes</p>
+      <h1>Ce qu'on nous demande</h1>
+      <p class="faq-intro">
+        Réservation, tarif, bon, conditions d'accès : nos réponses claires, au comptoir de la
+        Base nautique de La Gaillarde, aux Issambres. Une question qui n'est pas ici ? Appelez le
+        <a href={`tel:${site.phoneIntl}`}>{site.phone}</a>.
+      </p>
+
+      {faqData.sections.map((s) => (
+        <div class="faq-section">
+          <span class="faq-label">FAQ</span>
+          <p class="faq-name">{s.title}</p>
+          {s.items.map((it) => (
+            <details>
+              <summary><h2>{it.question}</h2></summary>
+              <div class="answer">
+                {it.status === 'answered' ? (
+                  <Fragment>
+                    <p class="lead">{it.lead}</p>
+                    <p>{it.dev}</p>
+                  </Fragment>
+                ) : (
+                  <p>
+                    Cette réponse ({it.validerLabel}) se confirme directement au comptoir de La
+                    Gaillarde, aux Issambres. Appelez le <a href={`tel:${site.phoneIntl}`}>{site.phone}</a>
+                    {' '}avant de réserver : on vous renseigne précisément.
+                  </p>
+                )}
+              </div>
+            </details>
+          ))}
+        </div>
+      ))}
+    </div>
+  </section>
+</Base>

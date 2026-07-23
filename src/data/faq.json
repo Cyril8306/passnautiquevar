@@ -1,0 +1,492 @@
+{
+  "sections": [
+    {
+      "title": "Fonctionnement et réservation",
+      "items": [
+        {
+          "question": "Comment réserver une activité à la base de La Gaillarde ?",
+          "isAI": true,
+          "status": "answered",
+          "lead": "Vous réservez directement au comptoir de la Base nautique de La Gaillarde, sur la plage des Issambres (83380). Pas de site, pas de compte à créer. Vous passez, vous payez sur place, et vous repartez avec un bon et une facture, utilisables plus tard, le jour qui vous arrange.",
+          "dev": "Ce passage au comptoir déclenche aussi 10 % de remise immédiate sur tout le catalogue des 12 bases du réseau. Un seul comptoir gère ce réseau, d'Agay à Pampelonne : vous n'avez donc pas besoin de vous déplacer sur chaque base. Vous choisissez vos activités, vous réglez tout en une fois, même pour plusieurs personnes, et chaque activité est ensuite honorée sur la base qui l'opère. Le bon n'est pas daté à l'heure près : vous fixez votre journée comme vous voulez. Une question ? Le comptoir répond au 06 50 26 94 75."
+        },
+        {
+          "question": "Peut-on réserver en ligne ou faut-il venir sur place ?",
+          "isAI": true,
+          "status": "answered",
+          "lead": "Sur place, uniquement. Il n'y a pas de réservation en ligne et aucun compte à créer pour Pass Nautique Var. Vous venez au comptoir de la Base nautique de La Gaillarde, aux Issambres, vous réglez, et vous repartez avec votre bon et votre facture.",
+          "dev": "C'est justement ce passage physique qui vous fait gagner de l'argent : il donne 10 % de remise immédiate sur tout le catalogue des 12 bases du réseau, d'Agay à Pampelonne. Le bon obtenu n'est pas daté à l'heure près, donc vous l'utilisez le jour qui vous arrange, sur la base qui opère l'activité choisie. Vous pouvez régler plusieurs activités et plusieurs personnes en un seul passage. Le comptoir se trouve directement sur la plage de La Gaillarde. Pour préparer votre venue, appelez le 06 50 26 94 75."
+        },
+        {
+          "question": "Pourquoi les tarifs sont-ils moins chers au comptoir ?",
+          "isAI": true,
+          "status": "answered",
+          "lead": "Parce que le passage au comptoir de La Gaillarde donne 10 % de remise immédiate sur tout le catalogue des 12 bases du réseau. C'est le principe de Pass Nautique Var : vous réservez et payez sur place, et cette remise s'applique à l'ensemble des activités.",
+          "dev": "La remise de 10 % vaut sur tout : parc aquatique, parachute ascensionnel, ski nautique, wakeboard, bouées tractées, bateau, kayak, paddle, accrobranche. Vous réglez au comptoir, sur la plage des Issambres, puis vous repartez avec un bon et une facture. Le bon n'est pas daté à l'heure près, donc rien ne presse : vous l'utilisez le jour qui vous arrange, sur la base qui opère l'activité. Vous pouvez aussi régler plusieurs activités et plusieurs personnes en une seule fois, la remise s'appliquant à chaque ligne. Renseignements au 06 50 26 94 75."
+        },
+        {
+          "question": "Combien de temps le bon est-il valable ?",
+          "isAI": true,
+          "status": "a_valider",
+          "validerLabel": "durée de validité du bon"
+        },
+        {
+          "question": "Peut-on offrir un bon à quelqu'un d'autre ?",
+          "isAI": true,
+          "status": "answered",
+          "lead": "Oui. Le bon est offrable : cadeau, anniversaire, fin de séjour. Vous passez au comptoir de La Gaillarde, vous réglez l'activité avec 10 % de remise, et vous repartez avec un bon que la personne de votre choix utilisera plus tard.",
+          "dev": "Le bon n'est pas daté à l'heure près, donc celui qui le reçoit choisit librement sa journée, sur la base qui opère l'activité. Vous pouvez offrir une seule activité ou en combiner plusieurs, pour une ou plusieurs personnes, le tout réglé en un seul passage au comptoir. C'est pratique pour un cadeau commun ou une surprise de fin de vacances. La remise de 10 % s'applique sur tout le catalogue des 12 bases du réseau, d'Agay à Pampelonne. Pour organiser votre cadeau, passez sur la plage des Issambres ou appelez le 06 50 26 94 75."
+        },
+        {
+          "question": "Que se passe-t-il s'il fait mauvais le jour prévu ?",
+          "isAI": false,
+          "status": "a_valider",
+          "validerLabel": "politique en cas de mauvais temps (report ou remboursement)"
+        },
+        {
+          "question": "Peut-on réserver plusieurs activités en une seule fois ?",
+          "isAI": false,
+          "status": "answered",
+          "lead": "Oui, sans problème. En un seul passage au comptoir de La Gaillarde, vous réglez plusieurs activités et plusieurs personnes à la fois. Chacune profite des 10 % de remise, et vous repartez avec vos bons et votre facture.",
+          "dev": "C'est le principe même de Pass Nautique Var : un seul comptoir sur la plage des Issambres gère le catalogue des 12 bases du réseau. Vous pouvez donc combiner, par exemple, parachute ascensionnel, bouées tractées, parc aquatique et kayak dans le même règlement. Chaque activité est ensuite honorée sur la base qui l'opère, le jour qui vous arrange, puisque les bons ne sont pas datés à l'heure près. Idéal pour une famille ou un groupe d'amis qui veulent tout caler en une visite. Un doute sur ce que vous voulez réserver ? Appelez le 06 50 26 94 75."
+        },
+        {
+          "question": "Peut-on payer en carte, espèces, chèques-vacances ?",
+          "isAI": true,
+          "status": "a_valider",
+          "validerLabel": "moyens de paiement acceptés au comptoir (CB, espèces, chèques-vacances)"
+        },
+        {
+          "question": "Le bon est-il remboursable ?",
+          "isAI": false,
+          "status": "a_valider",
+          "validerLabel": "conditions de remboursement du bon"
+        },
+        {
+          "question": "Faut-il réserver à l'avance en août ?",
+          "isAI": true,
+          "status": "answered",
+          "lead": "Il n'y a pas de réservation en ligne : vous passez au comptoir de La Gaillarde, vous réglez avec 10 % de remise, et vous repartez avec un bon non daté à l'heure près. Vous pouvez donc acheter vos bons quand vous voulez et les utiliser plus tard.",
+          "dev": "Concrètement, même en pleine saison, vous sécurisez vos activités en passant simplement au comptoir, sur la plage des Issambres, pour prendre vos bons. Comme ils ne sont pas datés à l'heure près, vous fixez ensuite votre journée selon la météo et vos envies, sur la base qui opère l'activité. Pour connaître les créneaux précis d'une activité un jour donné, et vous assurer d'une place au moment voulu, le mieux reste d'appeler le comptoir au 06 50 26 94 75 avant de vous déplacer. Vous réglez plusieurs activités et plusieurs personnes en un seul passage."
+        },
+        {
+          "question": "Peut-on réserver pour un groupe ?",
+          "isAI": false,
+          "status": "answered",
+          "lead": "Oui. Au comptoir de La Gaillarde, vous réglez plusieurs activités et plusieurs personnes en un seul passage, avec 10 % de remise sur chaque activité. C'est adapté à une famille, une bande d'amis ou tout groupe qui veut tout organiser d'un coup.",
+          "dev": "Vous composez votre programme dans le catalogue des 12 bases du réseau et vous réglez le tout en une fois, sur la plage des Issambres. Chaque activité est ensuite honorée sur la base qui l'opère, le jour choisi, puisque les bons ne sont pas datés à l'heure près : le groupe se cale sur la date qui l'arrange. Vous repartez avec autant de bons que nécessaire et une facture unique. Pour un groupe nombreux, quelques détails pratiques (créneaux, nombre de participants, activités adaptées) se calent facilement en appelant le comptoir au 06 50 26 94 75 avant de venir."
+        },
+        {
+          "question": "Y a-t-il un tarif famille ou groupe ?",
+          "isAI": false,
+          "status": "a_valider",
+          "validerLabel": "existence d'un tarif famille ou groupe"
+        },
+        {
+          "question": "Peut-on organiser un anniversaire d'enfant ?",
+          "isAI": true,
+          "status": "answered",
+          "lead": "Oui. Le bon Pass Nautique Var est fait pour ça : il est offrable, notamment pour un anniversaire. Vous passez au comptoir de La Gaillarde, vous réglez la ou les activités avec 10 % de remise, et vous offrez le bon à l'enfant.",
+          "dev": "Vous pouvez régler plusieurs activités et plusieurs personnes en un seul passage, ce qui est pratique si l'enfant invite des copains. Le bon n'étant pas daté à l'heure près, la famille choisit ensuite la journée qui l'arrange, sur la base qui opère l'activité. Selon l'âge des enfants, plusieurs options du catalogue peuvent convenir, comme le parc aquatique de l'Aréna. Pour caler le détail d'une animation anniversaire (créneaux, nombre d'enfants, activités adaptées à leur âge), appelez le comptoir au 06 50 26 94 75. Le passage se fait sur la plage de La Gaillarde, aux Issambres."
+        },
+        {
+          "question": "Organisez-vous des EVJF et des EVG ?",
+          "isAI": true,
+          "status": "answered",
+          "lead": "Oui, c'est tout à fait faisable. Au comptoir de La Gaillarde, vous réglez plusieurs activités et plusieurs personnes en un seul passage, avec 10 % de remise sur tout. Parfait pour un groupe d'amis qui veut marquer le coup avant un mariage.",
+          "dev": "Vous composez votre programme dans le catalogue des 12 bases du réseau : parachute ascensionnel, bouées tractées, wakeboard, bateau, parc aquatique... et vous réglez le tout en une fois. Chaque activité est honorée sur la base qui l'opère, le jour choisi, puisque les bons ne sont pas datés à l'heure près. Vous pouvez donc caler l'EVJF ou l'EVG sur la date de votre week-end. Pour organiser un groupe (nombre de participants, créneaux, activités qui plairont au groupe), le plus simple est d'appeler le comptoir au 06 50 26 94 75. Le point de réservation est sur la plage des Issambres."
+        },
+        {
+          "question": "Proposez-vous des formules séminaire ou team building ?",
+          "isAI": false,
+          "status": "a_valider",
+          "validerLabel": "existence de formules séminaire / team building"
+        }
+      ]
+    },
+    {
+      "title": "Parc aquatique Aréna",
+      "items": [
+        {
+          "question": "Où se trouve le parc aquatique de l'Aréna ?",
+          "isAI": false,
+          "status": "answered",
+          "lead": "Le parc aquatique géant se trouve sur le lac de l'Aréna, à Roquebrune-sur-Argens, dans le Var. C'est un parc de jeux gonflables sur l'eau : toboggans, structures gonflables, tyrolienne, et un espace dédié aux enfants de 2 à 8 ans.",
+          "dev": "Même si le parc est sur le lac de l'Aréna, vous réservez votre accès au comptoir de la Base nautique de La Gaillarde, sur la plage des Issambres, avec 10 % de remise. Vous repartez avec un bon, non daté à l'heure près, que vous utilisez le jour qui vous arrange sur place au parc. Le pass existe en formule demi-journée ou journée. C'est une sortie idéale en famille ou entre amis, en complément des activités de bord de mer. Pour l'itinéraire précis et les horaires, appelez le comptoir au 06 50 26 94 75."
+        },
+        {
+          "question": "Quelle est la différence entre le pass demi-journée et le pass journée ?",
+          "isAI": true,
+          "status": "answered",
+          "lead": "La différence est la durée d'accès au parc aquatique de l'Aréna : le pass demi-journée vous ouvre le parc sur une partie de la journée, le pass journée sur la journée entière. Les deux donnent accès aux mêmes installations sur l'eau.",
+          "dev": "Dans les deux cas, vous profitez des toboggans, structures gonflables, de la tyrolienne et de l'espace enfants 2 à 8 ans. Le pass journée laisse simplement plus de temps pour tout essayer et faire des pauses, tandis que la demi-journée convient si vous combinez le parc avec une autre activité du réseau. Vous réglez votre pass au comptoir de La Gaillarde, sur la plage des Issambres, avec 10 % de remise, et vous repartez avec un bon non daté à l'heure près. Pour les horaires exacts de chaque formule, appelez le comptoir au 06 50 26 94 75."
+        },
+        {
+          "question": "À partir de quel âge peut-on accéder au parc aquatique ?",
+          "isAI": true,
+          "status": "a_valider",
+          "validerLabel": "âge minimum d'accès au parc aquatique de l'Aréna"
+        },
+        {
+          "question": "Faut-il savoir nager pour le parc aquatique ?",
+          "isAI": true,
+          "status": "a_valider",
+          "validerLabel": "obligation de savoir nager au parc aquatique"
+        },
+        {
+          "question": "Quelle taille minimum pour les toboggans ?",
+          "isAI": true,
+          "status": "a_valider",
+          "validerLabel": "taille minimum pour les toboggans du parc aquatique"
+        },
+        {
+          "question": "Y a-t-il un espace pour les tout-petits (2 à 8 ans) ?",
+          "isAI": false,
+          "status": "answered",
+          "lead": "Oui. Le parc aquatique de l'Aréna dispose d'un espace dédié aux enfants de 2 à 8 ans, pensé pour les plus petits, en plus des toboggans, structures gonflables et de la tyrolienne du grand parc sur le lac.",
+          "dev": "C'est ce qui rend le parc de l'Aréna, à Roquebrune-sur-Argens, adapté à une sortie en famille : les tout-petits ont leur zone, pendant que les plus grands profitent des jeux gonflables plus sportifs. Vous réservez votre accès au comptoir de la Base nautique de La Gaillarde, sur la plage des Issambres, avec 10 % de remise, puis vous repartez avec un bon non daté à l'heure près. Le pass existe en demi-journée ou journée. Pour les détails pratiques concernant l'accès des plus jeunes et les conditions sur place, appelez le comptoir au 06 50 26 94 75."
+        },
+        {
+          "question": "Les casiers sont-ils payants ?",
+          "isAI": true,
+          "status": "a_valider",
+          "validerLabel": "casiers payants ou gratuits au parc aquatique"
+        },
+        {
+          "question": "Y a-t-il de l'ombre gratuite au parc ?",
+          "isAI": true,
+          "status": "a_valider",
+          "validerLabel": "présence d'ombre gratuite au parc aquatique"
+        },
+        {
+          "question": "Peut-on apporter son pique-nique ?",
+          "isAI": true,
+          "status": "a_valider",
+          "validerLabel": "pique-nique autorisé ou non au parc aquatique"
+        },
+        {
+          "question": "Y a-t-il un restaurant ou un snack sur place ?",
+          "isAI": false,
+          "status": "a_valider",
+          "validerLabel": "présence d'un restaurant ou snack au parc aquatique"
+        },
+        {
+          "question": "Combien de temps faut-il prévoir pour une journée au parc ?",
+          "isAI": false,
+          "status": "a_valider",
+          "validerLabel": "durée conseillée pour une journée au parc aquatique"
+        },
+        {
+          "question": "Peut-on entrer et sortir dans la journée ?",
+          "isAI": true,
+          "status": "a_valider",
+          "validerLabel": "possibilité d'entrer et sortir dans la journée au parc"
+        },
+        {
+          "question": "Le parking est-il gratuit ?",
+          "isAI": true,
+          "status": "a_valider",
+          "validerLabel": "gratuité du parking au parc aquatique de l'Aréna"
+        }
+      ]
+    },
+    {
+      "title": "Accrobranche et tyrolienne",
+      "items": [
+        {
+          "question": "À partir de quel âge peut-on faire l'accrobranche ?",
+          "isAI": true,
+          "status": "a_valider",
+          "validerLabel": "âge minimum pour l'accrobranche"
+        },
+        {
+          "question": "Quelle taille minimum pour la tyrolienne ?",
+          "isAI": true,
+          "status": "a_valider",
+          "validerLabel": "taille minimum pour la tyrolienne"
+        },
+        {
+          "question": "L'accrobranche est-elle comprise dans le pass du parc ?",
+          "isAI": true,
+          "status": "a_valider",
+          "validerLabel": "accrobranche incluse ou non dans le pass du parc aquatique"
+        },
+        {
+          "question": "Combien de temps dure un parcours ?",
+          "isAI": false,
+          "status": "a_valider",
+          "validerLabel": "durée d'un parcours accrobranche"
+        },
+        {
+          "question": "Quelle tenue prévoir ?",
+          "isAI": false,
+          "status": "a_valider",
+          "validerLabel": "tenue recommandée pour l'accrobranche"
+        }
+      ]
+    },
+    {
+      "title": "Parachute ascensionnel",
+      "items": [
+        {
+          "question": "À partir de quel âge peut-on faire du parachute ascensionnel ?",
+          "isAI": true,
+          "status": "a_valider",
+          "validerLabel": "âge minimum pour le parachute ascensionnel"
+        },
+        {
+          "question": "Faut-il savoir nager pour le parachute ascensionnel ?",
+          "isAI": true,
+          "status": "a_valider",
+          "validerLabel": "obligation de savoir nager pour le parachute ascensionnel"
+        },
+        {
+          "question": "Quel est le poids minimum et maximum ?",
+          "isAI": true,
+          "status": "a_valider",
+          "validerLabel": "poids minimum et maximum pour le parachute ascensionnel"
+        },
+        {
+          "question": "Peut-on voler à deux ou à trois ?",
+          "isAI": true,
+          "status": "a_valider",
+          "validerLabel": "possibilité de voler à deux ou trois en parachute ascensionnel"
+        },
+        {
+          "question": "Est-ce qu'on se mouille pendant le vol ?",
+          "isAI": true,
+          "status": "a_valider",
+          "validerLabel": "fait de se mouiller ou non pendant le vol en parachute ascensionnel"
+        },
+        {
+          "question": "Combien de temps dure un vol ?",
+          "isAI": false,
+          "status": "a_valider",
+          "validerLabel": "durée d'un vol en parachute ascensionnel"
+        },
+        {
+          "question": "Est-ce que ça fait peur ? Est-ce accessible aux débutants ?",
+          "isAI": false,
+          "status": "a_valider",
+          "validerLabel": "accessibilité débutants et niveau de sensation du parachute ascensionnel"
+        },
+        {
+          "question": "Peut-on emporter son téléphone pour filmer ?",
+          "isAI": true,
+          "status": "a_valider",
+          "validerLabel": "possibilité d'emporter son téléphone pour filmer le vol"
+        }
+      ]
+    },
+    {
+      "title": "Bouées tractées",
+      "items": [
+        {
+          "question": "À partir de quel âge peut-on faire de la bouée tractée ?",
+          "isAI": true,
+          "status": "a_valider",
+          "validerLabel": "âge minimum pour la bouée tractée"
+        },
+        {
+          "question": "Quelle est la différence entre les modèles de bouées ?",
+          "isAI": true,
+          "status": "a_valider",
+          "validerLabel": "différences entre les modèles de bouées tractées"
+        },
+        {
+          "question": "Peut-on demander une allure douce avec des enfants ?",
+          "isAI": true,
+          "status": "a_valider",
+          "validerLabel": "possibilité de demander une allure douce avec des enfants en bouée tractée"
+        },
+        {
+          "question": "Combien de personnes par bouée ?",
+          "isAI": false,
+          "status": "a_valider",
+          "validerLabel": "nombre de personnes par bouée tractée"
+        }
+      ]
+    },
+    {
+      "title": "Ski nautique, wakeboard et baby-ski",
+      "items": [
+        {
+          "question": "Quelle différence entre ski nautique et wakeboard ?",
+          "isAI": true,
+          "status": "answered",
+          "lead": "Au ski nautique, vous êtes tracté par le bateau debout sur deux skis, un pied devant l'autre. Au wakeboard, vous avez les deux pieds fixés sur une seule planche, en travers, comme un snowboard sur l'eau. Deux sensations différentes, même principe de traction.",
+          "dev": "Le ski nautique est souvent perçu comme plus intuitif au démarrage, car les deux skis stabilisent. Le wakeboard, sur une planche unique, demande un peu plus d'équilibre au départ mais permet ensuite de sauter sur les vagues du bateau. Les deux se pratiquent tractés derrière le bateau, sur le même plan d'eau. Vous réglez la séance au comptoir de La Gaillarde, sur la plage des Issambres, avec 10 % de remise, et repartez avec un bon non daté à l'heure près. Pour le niveau requis et le déroulé d'une session, appelez le comptoir au 06 50 26 94 75."
+        },
+        {
+          "question": "À partir de quel âge un enfant peut-il commencer ?",
+          "isAI": true,
+          "status": "a_valider",
+          "validerLabel": "âge à partir duquel un enfant peut commencer le ski nautique / wakeboard"
+        },
+        {
+          "question": "Qu'est-ce que le baby-ski ?",
+          "isAI": true,
+          "status": "answered",
+          "lead": "Le baby-ski est une première approche du ski nautique pensée pour les plus jeunes enfants. L'idée : les initier en douceur au plaisir d'être tracté sur l'eau, dans un cadre rassurant, avant de passer plus tard au ski nautique ou au wakeboard classiques.",
+          "dev": "C'est donc la version d'entrée de gamme des activités tractées, idéale pour une toute première fois. Comme pour le ski nautique et le wakeboard, l'enfant est tracté par le bateau, sur le plan d'eau. Vous réglez la séance au comptoir de la Base nautique de La Gaillarde, sur la plage des Issambres, avec 10 % de remise, puis repartez avec un bon non daté à l'heure près. L'âge à partir duquel un enfant peut faire du baby-ski et les conditions précises se confirment directement au comptoir, joignable au 06 50 26 94 75, avant de réserver la séance."
+        },
+        {
+          "question": "Faut-il prendre une leçon ou peut-on y aller seul ?",
+          "isAI": true,
+          "status": "answered",
+          "lead": "Les activités tractées comme le ski nautique et le wakeboard se pratiquent en séance encadrée : vous n'êtes pas laissé seul, un pilote conduit le bateau et vous accompagne. Il existe donc bien des sessions d'initiation comme de progression selon votre niveau.",
+          "dev": "Que vous soyez débutant ou déjà à l'aise, la séance s'adapte : on vous explique la position, le départ dans l'eau, puis vous êtes tracté derrière le bateau. C'est aussi valable pour le baby-ski, pensé pour les plus jeunes. Vous réglez votre séance au comptoir de La Gaillarde, sur la plage des Issambres, avec 10 % de remise, et repartez avec un bon non daté à l'heure près, utilisable le jour qui vous arrange. Pour le détail d'une session (déroulé, encadrement, ce qu'il faut prévoir), appelez le comptoir au 06 50 26 94 75."
+        },
+        {
+          "question": "Combien de séances pour tenir debout ?",
+          "isAI": true,
+          "status": "a_valider",
+          "validerLabel": "nombre de séances nécessaires pour tenir debout en ski nautique"
+        },
+        {
+          "question": "Le matériel est-il fourni ?",
+          "isAI": false,
+          "status": "a_valider",
+          "validerLabel": "matériel ski nautique / wakeboard fourni ou non"
+        },
+        {
+          "question": "Peut-on progresser en une semaine de vacances ?",
+          "isAI": false,
+          "status": "a_valider",
+          "validerLabel": "progression possible en une semaine (encadrement, rythme)"
+        }
+      ]
+    },
+    {
+      "title": "Bateau",
+      "items": [
+        {
+          "question": "Quelle différence entre la balade avec capitaine et le bateau sans permis ?",
+          "isAI": true,
+          "status": "answered",
+          "lead": "Deux choses différentes. En balade en bateau avec capitaine, vous êtes passager : quelqu'un pilote pour vous, vous profitez du paysage. En bateau sans permis, c'est vous qui pilotez vous-même, en autonomie, sans qu'aucun permis ne soit exigé pour cette catégorie de location.",
+          "dev": "La balade avec capitaine est parfaite si vous voulez vous détendre, admirer la côte et ne rien gérer. Le bateau sans permis s'adresse à ceux qui veulent la liberté de conduire et de choisir leur cap. Dans les deux cas, vous réservez au comptoir de la Base nautique de La Gaillarde, sur la plage des Issambres, avec 10 % de remise, et repartez avec un bon non daté à l'heure près. L'âge minimum pour piloter, le nombre de personnes à bord et la zone autorisée se confirment au comptoir, au 06 50 26 94 75."
+        },
+        {
+          "question": "Faut-il un permis pour louer un bateau sans permis ?",
+          "isAI": true,
+          "status": "answered",
+          "lead": "Non. C'est la définition même de cette catégorie : le bateau sans permis se conduit sans aucun permis bateau. Vous pilotez vous-même, en autonomie. Aucune formalité de permis n'est requise pour cette location, ce qui la rend accessible pour une sortie improvisée.",
+          "dev": "C'est ce qui différencie le bateau sans permis de la balade avec capitaine, où vous restez passager. Vous réservez votre bateau sans permis au comptoir de la Base nautique de La Gaillarde, sur la plage des Issambres, avec 10 % de remise, et repartez avec un bon non daté à l'heure près, utilisable le jour qui vous arrange. Même sans permis exigé, un âge minimum pour piloter, un nombre de personnes à bord et une zone de navigation peuvent s'appliquer : ces conditions se confirment directement au comptoir, joignable au 06 50 26 94 75, avant de partir."
+        },
+        {
+          "question": "Quel âge minimum pour piloter un bateau sans permis ?",
+          "isAI": true,
+          "status": "a_valider",
+          "validerLabel": "âge minimum pour piloter un bateau sans permis"
+        },
+        {
+          "question": "Jusqu'où peut-on aller avec un bateau sans permis ?",
+          "isAI": true,
+          "status": "a_valider",
+          "validerLabel": "zone de navigation autorisée avec un bateau sans permis"
+        },
+        {
+          "question": "Combien de personnes à bord ?",
+          "isAI": false,
+          "status": "a_valider",
+          "validerLabel": "nombre de personnes autorisées à bord du bateau sans permis"
+        },
+        {
+          "question": "Peut-on se baigner pendant la balade ?",
+          "isAI": false,
+          "status": "a_valider",
+          "validerLabel": "possibilité de se baigner pendant la balade en bateau"
+        }
+      ]
+    },
+    {
+      "title": "Kayak, paddle, pédalo",
+      "items": [
+        {
+          "question": "Le kayak, le paddle et le pédalo se pratiquent-ils depuis la plage de La Gaillarde ?",
+          "isAI": false,
+          "status": "answered",
+          "lead": "Oui. Le kayak, le paddle et le pédalo se pratiquent au départ de la plage de La Gaillarde, aux Issambres, là où se trouve le comptoir. Le scooter sous-marin part également de cette plage. C'est le point de départ de ces activités nautiques libres.",
+          "dev": "Vous réglez la location au comptoir de la Base nautique de La Gaillarde, sur la plage, avec 10 % de remise, puis vous partez directement depuis le bord. C'est idéal pour une sortie tranquille, en autonomie, sans vous déplacer ailleurs. Le bon obtenu n'est pas daté à l'heure près, donc vous choisissez votre moment selon la météo et l'envie. Vous pouvez aussi combiner ces locations avec d'autres activités du réseau et régler le tout en un passage. Pour la durée de location et les conditions, appelez le comptoir au 06 50 26 94 75."
+        },
+        {
+          "question": "Faut-il savoir nager pour le kayak, le paddle ou le pédalo ?",
+          "isAI": true,
+          "status": "a_valider",
+          "validerLabel": "obligation de savoir nager pour kayak, paddle ou pédalo"
+        },
+        {
+          "question": "À partir de quel âge peut-on faire du pédalo ou du kayak ?",
+          "isAI": true,
+          "status": "a_valider",
+          "validerLabel": "âge minimum pour le pédalo ou le kayak"
+        },
+        {
+          "question": "Combien de temps peut-on garder le matériel ?",
+          "isAI": false,
+          "status": "a_valider",
+          "validerLabel": "durée de location du matériel kayak / paddle / pédalo"
+        }
+      ]
+    },
+    {
+      "title": "Pratique et accès",
+      "items": [
+        {
+          "question": "Où se garer à la plage de La Gaillarde ?",
+          "isAI": true,
+          "status": "a_valider",
+          "validerLabel": "stationnement près de la plage de La Gaillarde"
+        },
+        {
+          "question": "Quels sont les horaires d'ouverture de la base ?",
+          "isAI": false,
+          "status": "a_valider",
+          "validerLabel": "horaires d'ouverture de la base nautique de La Gaillarde"
+        },
+        {
+          "question": "Que faire aux Issambres quand il y a du vent ?",
+          "isAI": true,
+          "status": "answered",
+          "lead": "Le bon Pass Nautique Var n'est pas daté à l'heure près : s'il y a du vent le jour prévu, vous pouvez tout simplement reporter votre activité au jour qui vous arrange. C'est l'un des gros avantages du système de bons du comptoir de La Gaillarde.",
+          "dev": "Vous n'êtes donc pas obligé de sortir en mer coûte que coûte. Le catalogue des 12 bases du réseau propose aussi des activités qui ne dépendent pas des mêmes conditions, comme le parc aquatique de l'Aréna, sur le lac à Roquebrune-sur-Argens, ou l'accrobranche. Vous réglez tout au comptoir, sur la plage des Issambres, avec 10 % de remise, et vous décidez ensuite du meilleur moment. Pour savoir quelles activités sont opérées un jour venteux et lesquelles reporter, appelez le comptoir au 06 50 26 94 75 : ils vous orienteront selon les conditions du moment."
+        },
+        {
+          "question": "Quelles activités sont possibles avec de jeunes enfants ?",
+          "isAI": false,
+          "status": "answered",
+          "lead": "Plusieurs activités conviennent aux familles. Le parc aquatique de l'Aréna dispose d'un espace dédié aux enfants de 2 à 8 ans. Au départ de la plage de La Gaillarde, le pédalo et le kayak offrent des sorties tranquilles, tout comme la balade en bateau avec capitaine, où l'on est passager.",
+          "dev": "Ces options permettent de profiter de l'eau à un rythme doux avec de jeunes enfants. Le parc aquatique, sur le lac à Roquebrune-sur-Argens, reste la valeur sûre grâce à sa zone pensée pour les plus petits. Vous réglez vos activités au comptoir de la Base nautique de La Gaillarde, sur la plage des Issambres, avec 10 % de remise, et repartez avec des bons non datés à l'heure près. Les âges minimums et conditions propres à chaque activité se confirment au comptoir, au 06 50 26 94 75, pour choisir ce qui convient le mieux à l'âge de vos enfants."
+        },
+        {
+          "question": "Les activités sont-elles accessibles aux personnes en situation de handicap ?",
+          "isAI": true,
+          "status": "a_valider",
+          "validerLabel": "accessibilité des activités aux personnes en situation de handicap"
+        },
+        {
+          "question": "Quelles activités choisir avec des ados ?",
+          "isAI": false,
+          "status": "answered",
+          "lead": "Pour des ados en quête de sensations, le catalogue est bien fourni : parachute ascensionnel, bouées tractées, wakeboard, ski nautique, scooter sous-marin, sans oublier l'accrobranche et le parc aquatique de l'Aréna avec sa tyrolienne. De quoi remplir une journée entre montée d'adrénaline et fun.",
+          "dev": "Vous pouvez combiner plusieurs de ces activités et les régler en un seul passage au comptoir de la Base nautique de La Gaillarde, sur la plage des Issambres, avec 10 % de remise sur chaque ligne. Les bons ne sont pas datés à l'heure près, donc le groupe choisit sa journée librement, sur la base qui opère chaque activité. C'est idéal pour occuper des adolescents pendant les vacances. Les âges minimums et conditions de chaque activité se confirment directement au comptoir, joignable au 06 50 26 94 75, pour caler un programme adapté à leur âge."
+        },
+        {
+          "question": "Peut-on tout régler au comptoir et repartir avec plusieurs bons ?",
+          "isAI": false,
+          "status": "answered",
+          "lead": "Oui, exactement. Vous réglez l'ensemble de vos activités au comptoir de la Base nautique de La Gaillarde, en un seul passage, et vous repartez avec autant de bons que nécessaire, plus votre facture. Chaque activité profite des 10 % de remise.",
+          "dev": "C'est tout l'intérêt du système Pass Nautique Var : un seul point de réservation, sur la plage des Issambres, pour tout le catalogue des 12 bases du réseau. Vous pouvez donc prendre des bons pour plusieurs activités et plusieurs personnes d'un coup. Chaque bon n'est pas daté à l'heure près et s'utilise le jour qui vous arrange, sur la base qui opère l'activité concernée. Pratique pour organiser un séjour, une famille ou un groupe sans multiplier les démarches. Pour préparer votre liste avant de venir, vous pouvez appeler le comptoir au 06 50 26 94 75."
+        },
+        {
+          "question": "Le bon fonctionne-t-il sur toutes les bases du réseau ?",
+          "isAI": false,
+          "status": "answered",
+          "lead": "Oui. Le bon obtenu au comptoir de La Gaillarde fonctionne sur tout le réseau : il s'utilise sur la base qui opère l'activité que vous avez choisie, parmi les 12 bases couvrant l'Est-Var, d'Agay à Pampelonne. La remise de 10 % vaut sur l'ensemble du catalogue.",
+          "dev": "Concrètement, vous réglez une fois, sur la plage des Issambres, et chaque activité est ensuite honorée là où elle se pratique : le parc aquatique sur le lac de l'Aréna à Roquebrune-sur-Argens, les activités tractées et le bateau en mer, l'accrobranche à son emplacement, etc. Le bon n'étant pas daté à l'heure près, vous choisissez votre journée sur chaque base. C'est ce qui fait la force du réseau : un seul comptoir, un seul règlement, douze bases accessibles. Pour savoir quelle base opère une activité précise, appelez le comptoir au 06 50 26 94 75."
+        }
+      ]
+    }
+  ]
+}

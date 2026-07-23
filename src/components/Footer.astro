@@ -4,6 +4,12 @@ import { site } from '../data/site';
 <footer>
   <div class="wrap">
     <a class="mark" href="/">Pass<b>Nautique</b>Var</a>
+    <nav class="footer-nav">
+      <a href="/">Accueil</a>
+      <a href="/comment-ca-marche/">Comment ça marche</a>
+      <a href="/faq/">FAQ</a>
+      <a href="/nous-trouver/">Nous trouver</a>
+    </nav>
     <p>{site.place} — {site.town} ({site.postal}), {site.region}.</p>
     <p>Téléphone : <a href={`tel:${site.phoneIntl}`}>{site.phone}</a></p>
     <p>{site.hoursHuman}.</p>

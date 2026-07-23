@@ -1,0 +1,60 @@
+---
+import Base from '../layouts/Base.astro';
+import { site } from '../data/site';
+
+const title = 'Nous trouver — Comptoir de La Gaillarde, Les Issambres';
+const description =
+  "Un seul comptoir aux Issambres, sur la plage de La Gaillarde : réservez et payez sur place pour les 12 bases nautiques de l'Est-Var, avec 10 % de remise.";
+
+const schema = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Accueil', item: site.domain },
+      { '@type': 'ListItem', position: 2, name: 'Nous trouver', item: `${site.domain}/nous-trouver/` },
+    ],
+  },
+];
+
+const content = `
+<p>Tout se passe à un seul endroit : la <strong>Base nautique de La Gaillarde</strong>, directement sur la plage, aux <strong>Issambres</strong>, dans le Var. C'est notre comptoir unique. Vous venez, vous réservez, vous payez sur place. Pas de réservation en ligne, pas de compte à créer.</p>
+
+<h2>Un seul comptoir pour les 12 bases du réseau</h2>
+<p>Ce comptoir couvre tout l'Est-Var, <strong>d'Agay à Pampelonne</strong>. En passant nous voir sur la plage de La Gaillarde, vous réglez vos activités pour n'importe laquelle des <strong>12 bases</strong> du réseau. Et vous obtenez <strong>10 % de remise immédiate sur tout le catalogue</strong>.</p>
+<p>Vous repartez avec un bon et une facture. Le bon n'est pas figé sur un créneau précis : vous l'utilisez plus tard, le jour qui vous arrange, sur la base qui opère l'activité. Vous pouvez régler plusieurs activités et plusieurs personnes en un seul passage. Le bon est aussi <strong>offrable</strong> : cadeau, anniversaire, fin de séjour.</p>
+
+<h2>Ce que vous pouvez réserver au comptoir</h2>
+<ul>
+<li>Parc aquatique géant sur le lac de l'Aréna (Roquebrune-sur-Argens) : toboggans, structures gonflables, tyrolienne, espace enfants 2-8 ans. Pass demi-journée ou journée.</li>
+<li>Parachute ascensionnel, ski nautique, wakeboard, baby-ski, bouées tractées.</li>
+<li>Bateau sans permis, que vous pilotez vous-même : aucun permis n'est requis pour cette catégorie de location.</li>
+<li>Balade en bateau avec capitaine : vous êtes passager, on s'occupe de tout.</li>
+<li>Kayak, paddle, pédalo et scooter sous-marin au départ de la plage de La Gaillarde.</li>
+<li>Accrobranche.</li>
+</ul>
+`;
+---
+<Base title={title} description={description} path="/nous-trouver/" schema={schema}>
+  <section class="content">
+    <div class="wrap">
+      <p class="eyebrow">Nous trouver</p>
+      <h1>Le comptoir de la Base de La Gaillarde</h1>
+      <div class="prose" set:html={content}></div>
+
+      <div class="visit" style="margin-top:2.8rem">
+        <div class="map">
+          <img src="/media/card-base.webp" alt="Plage de La Gaillarde aux Issambres vue du ciel" width="720" height="540" loading="lazy" />
+        </div>
+        <dl>
+          <dt>Adresse</dt>
+          <dd>{site.place}<br />{site.town} ({site.postal}), {site.region}</dd>
+          <dt>Téléphone</dt>
+          <dd><a href={`tel:${site.phoneIntl}`}>{site.phone}</a></dd>
+          <dt>Y aller</dt>
+          <dd><a href={site.mapsUrl} target="_blank" rel="noopener">Ouvrir l'itinéraire →</a></dd>
+        </dl>
+      </div>
+    </div>
+  </section>
+</Base>
