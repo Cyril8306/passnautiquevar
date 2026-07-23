@@ -1,0 +1,15 @@
+---
+import { site } from '../data/site';
+---
+<footer>
+  <div class="wrap">
+    <a class="mark" href="/">Pass<b>Nautique</b>Var</a>
+    <p>{site.place} — {site.town} ({site.postal}), {site.region}.</p>
+    <p>Téléphone : <a href={`tel:${site.phoneIntl}`}>{site.phone}</a></p>
+    <p>{site.hoursHuman}.</p>
+    <p class="note">
+      Réservation et paiement au comptoir · 10 % de remise immédiate · Bon valable sur
+      les 12 bases du réseau
+    </p>
+  </div>
+</footer>

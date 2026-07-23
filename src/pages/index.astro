@@ -1,0 +1,293 @@
+---
+import Base from '../layouts/Base.astro';
+import Tape from '../components/Tape.astro';
+import { site, areaServed } from '../data/site';
+
+const title = "Pass Nautique Var — Toutes les activités de l'Est-Var, −10 % au comptoir";
+const description =
+  "Parc aquatique géant, parachute ascensionnel, ski nautique, bateau sans permis : toutes les activités nautiques de l'Est-Var, d'Agay à Pampelonne, réunies au comptoir de La Gaillarde (Les Issambres) avec 10 % de remise immédiate.";
+
+const days = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
+
+const schema = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'Organization',
+    name: site.name,
+    legalName: site.legalName,
+    url: site.domain,
+    telephone: site.phoneIntl,
+    areaServed: areaServed.map((a) => ({ '@type': 'City', name: a })),
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'WebSite',
+    name: site.name,
+    url: site.domain,
+    inLanguage: 'fr-FR',
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'SportsActivityLocation',
+    name: site.place,
+    description:
+      "Point de vente unique pour toutes les activités nautiques et de loisirs de l'Est-Var, d'Agay à Pampelonne. Réservation et paiement au comptoir de La Gaillarde, 10 % de remise immédiate, bon valable sur les 12 bases du réseau.",
+    url: site.domain,
+    telephone: site.phoneIntl,
+    address: {
+      '@type': 'PostalAddress',
+      streetAddress: site.street,
+      addressLocality: site.town,
+      postalCode: site.postal,
+      addressRegion: site.region,
+      addressCountry: site.country,
+    },
+    geo: {
+      '@type': 'GeoCoordinates',
+      latitude: site.geo.lat,
+      longitude: site.geo.lng,
+    },
+    openingHoursSpecification: [
+      {
+        '@type': 'OpeningHoursSpecification',
+        dayOfWeek: days,
+        opens: site.opening.opens,
+        closes: site.opening.closes,
+      },
+    ],
+    areaServed: areaServed.map((a) => ({ '@type': 'City', name: a })),
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Accueil', item: site.domain },
+    ],
+  },
+];
+---
+<Base title={title} description={description} path="/" schema={schema}>
+  <!-- ============ HERO ============ -->
+  <header class="hero">
+    <div class="ph scrim">
+      <video
+        autoplay
+        muted
+        loop
+        playsinline
+        poster="/media/hero-arena.webp"
+        width="720"
+        height="1000"
+      >
+        <source src="/media/hero-arena.mp4" type="video/mp4" />
+      </video>
+    </div>
+    <div class="hero-in">
+      <div class="wrap">
+        <span class="badge">−10 % immédiat · sur tout le catalogue</span>
+        <h1><span>Tout l'Est-Var.</span> <span class="hl">−10 % ici.</span></h1>
+        <p class="lede">
+          D'Agay à Pampelonne : le parc aquatique géant et toutes les activités de
+          nos 12 bases nautiques, achetées en une fois au comptoir de La Gaillarde.
+          10 % de remise immédiate, qui n'existe qu'ici.
+        </p>
+        <div class="hero-cta">
+          <a class="btn btn-y" href={site.mapsUrl} target="_blank" rel="noopener">Venir au comptoir</a>
+          <a class="btn btn-o" href="#activites">Voir les activités</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section class="promo">
+    <div class="wrap">
+      <span class="promo-label">L'offre du comptoir · La Gaillarde</span>
+      <p class="promo-line"><span class="promo-num">−10 %</span> sur <span class="hl">toutes nos activités</span></p>
+    </div>
+  </section>
+
+  <Tape />
+
+  <!-- ============ COMMENT ÇA MARCHE ============ -->
+  <section class="steps">
+    <div class="wrap">
+      <div class="head rv">
+        <p class="eyebrow">Comment ça marche</p>
+        <h2>Trois pas, un bon</h2>
+      </div>
+      <div class="steps-g">
+        <div class="step rv">
+          <b>Vous choisissez ici</b>
+          <p>Sur la plage, au comptoir de La Gaillarde. Sans réservation en ligne, sans compte à créer.</p>
+        </div>
+        <div class="step rv">
+          <b>−10 % immédiat</b>
+          <p>Dix pour cent de remise sur toutes les activités des 12 bases, pour toute la famille, en un seul passage.</p>
+        </div>
+        <div class="step rv">
+          <b>Vous repartez avec un bon</b>
+          <p>À utiliser le jour qui vous arrange, sur la base concernée. Un bon + une facture.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PILIER : PARC AQUATIQUE ARENA ============ -->
+  <section id="activites" style="padding-top:0">
+    <div class="wrap">
+      <div class="head rv">
+        <p class="eyebrow">Le catalogue</p>
+        <h2>Toutes <span class="hl">remisées</span> ici</h2>
+      </div>
+    </div>
+    <div class="feature rv">
+      <div class="ph scrim">
+        <img src="/media/feat-arena.webp" alt="Parc aquatique gonflable géant sur le lac de l'Arena, avec toboggans et structures flottantes" width="720" height="1000" loading="lazy" />
+      </div>
+      <div class="feature-in">
+        <div class="wrap">
+          <span class="badge">Le plus demandé</span>
+          <h3>Parc aquatique géant</h3>
+          <ul>
+            <li>Toboggans géants</li>
+            <li>Structures gonflables</li>
+            <li>Tyrolienne</li>
+            <li>Espace 2–8 ans</li>
+          </ul>
+          <p>Le plus grand terrain de jeu aquatique du secteur, sur le lac de l'Arena. Pass demi-journée ou journée, à réserver au comptoir.</p>
+          <a class="btn btn-y" href={site.mapsUrl} target="_blank" rel="noopener">Le réserver au comptoir</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- ============ GRILLE ACTIVITÉS ============ -->
+    <div class="wrap">
+      <div class="grid">
+        <article class="card rv">
+          <div class="ph scrim">
+            <img src="/media/card-parachute.webp" alt="Parachute ascensionnel jaune en forme de smiley au-dessus de la mer du golfe" width="720" height="900" loading="lazy" />
+          </div>
+          <div class="card-in">
+            <span class="k">Sensations</span>
+            <h3>Parachute ascensionnel</h3>
+            <p>Le smiley jaune du golfe. Vol à deux ou à trois, vue plein ciel.</p>
+          </div>
+        </article>
+
+        <article class="card rv card--soon">
+          <div class="card-in">
+            <span class="k">Glisse</span>
+            <h3>Ski nautique &amp; wakeboard</h3>
+            <p>Leçon ou session libre. Baby-ski pour les plus jeunes.</p>
+          </div>
+        </article>
+
+        <article class="card rv card--soon">
+          <div class="card-in">
+            <span class="k">Bateau</span>
+            <h3>Bateau sans permis</h3>
+            <p>Vous pilotez. Aucun permis requis, briefing au départ.</p>
+          </div>
+        </article>
+
+        <article class="card rv card--soon">
+          <div class="card-in">
+            <span class="k">Bateau</span>
+            <h3>Balade avec capitaine</h3>
+            <p>Les calanques du golfe, tranquille, sans rien piloter.</p>
+          </div>
+        </article>
+
+        <article class="card rv card--soon">
+          <div class="card-in">
+            <span class="k">Sensations</span>
+            <h3>Bouées tractées</h3>
+            <p>Douce avec les enfants ou musclée. Vous choisissez le rythme.</p>
+          </div>
+        </article>
+
+        <article class="card rv">
+          <div class="ph scrim">
+            <img src="/media/card-drone.webp" alt="Eau turquoise de La Gaillarde vue du ciel, avec pédalo et paddle" width="720" height="900" loading="lazy" />
+          </div>
+          <div class="card-in">
+            <span class="k">Sur place</span>
+            <h3>Kayak · Paddle · Pédalo</h3>
+            <p>Directement sur la plage de La Gaillarde. Et scooter sous-marin.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ POURQUOI ICI (FLIP JAUNE) ============ -->
+  <section class="flip">
+    <div class="wrap">
+      <p class="eyebrow">L'avantage plage</p>
+      <h2>Pourquoi réserver ici</h2>
+      <div class="args">
+        <div class="arg rv">
+          <b>Le meilleur prix, ici</b>
+          <p>Les 10 % de remise ne s'obtiennent qu'au comptoir de La Gaillarde, en réglant sur place — pas base par base.</p>
+        </div>
+        <div class="arg rv">
+          <b>Un bon, ça s'offre</b>
+          <p>Cadeau, anniversaire, fin de séjour. Le bon change de mains sans problème.</p>
+        </div>
+        <div class="arg rv">
+          <b>Un passage, tout le séjour</b>
+          <p>Une seule visite au comptoir couvre toute la famille et toutes les envies de la semaine.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FAQ TEASER ============ -->
+  <section>
+    <div class="wrap">
+      <div class="head rv">
+        <p class="eyebrow">Questions fréquentes</p>
+        <h2>Ce qu'on nous demande</h2>
+      </div>
+      <div class="faq rv">
+        <details>
+          <summary>Comment réserver les activités à La Gaillarde ?</summary>
+          <p>Vous passez au comptoir de la base de La Gaillarde, aux Issambres. Vous choisissez vos activités, vous réglez sur place au tarif préférentiel, et vous repartez avec un bon et une facture. Le tarif remisé n'existe qu'au comptoir : il n'y a pas de réservation en ligne.</p>
+        </details>
+        <details>
+          <summary>Peut-on réserver en ligne ou faut-il venir sur place ?</summary>
+          <p>Tout se passe au comptoir, sur la plage de La Gaillarde. C'est justement ce passage sur place qui débloque le tarif préférentiel sur l'ensemble du catalogue. Le site sert à préparer votre visite : vous savez déjà ce que vous voulez en arrivant.</p>
+        </details>
+        <details>
+          <summary>Peut-on offrir un bon à quelqu'un d'autre ?</summary>
+          <p>Oui. Le bon peut être offert : cadeau, anniversaire, souvenir de vacances. La personne qui le reçoit se présente à la base concernée pour vivre l'activité.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ NOUS TROUVER ============ -->
+  <section id="venir" class="steps">
+    <div class="wrap">
+      <div class="head rv">
+        <p class="eyebrow">Nous trouver</p>
+        <h2>Base de <span class="hl">La Gaillarde</span></h2>
+      </div>
+      <div class="visit">
+        <div class="map rv">
+          <img src="/media/card-base.webp" alt="Plage de La Gaillarde aux Issambres vue du ciel" width="720" height="540" loading="lazy" />
+        </div>
+        <dl class="rv">
+          <dt>Adresse</dt>
+          <dd>{site.place}<br />{site.town} ({site.postal}), {site.region}</dd>
+          <dt>Téléphone</dt>
+          <dd><a href={`tel:${site.phoneIntl}`}>{site.phone}</a></dd>
+          <dt>Horaires</dt>
+          <dd>{site.hoursHuman}</dd>
+          <dt>Y aller</dt>
+          <dd><a href={site.mapsUrl} target="_blank" rel="noopener">Ouvrir l'itinéraire →</a></dd>
+        </dl>
+      </div>
+    </div>
+  </section>
+</Base>

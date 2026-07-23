@@ -1,0 +1,12 @@
+---
+import { activities } from '../data/site';
+// Doublé pour une boucle sans couture (translateX -50%).
+const items = [...activities, ...activities];
+---
+<div class="tape" aria-hidden="true">
+  <div class="tape-in">
+    {items.map((a) => (
+      <Fragment>{a}<i>/</i></Fragment>
+    ))}
+  </div>
+</div>
