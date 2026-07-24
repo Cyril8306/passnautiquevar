@@ -94,6 +94,10 @@ export const villes: Ville[] = [
 <h2>Comment profiter des -10 % au comptoir de La Gaillarde</h2>
 <p>Un seul point pour tout réserver et tout payer : le <strong>comptoir de La Gaillarde</strong>, sur la plage, aux Issambres — sur la commune même de Roquebrune-sur-Argens. C'est là que se réserve l'intégralité du catalogue, parc aquatique de l'Aréna compris.</p>
 <p>Passez au comptoir. Vous obtenez <strong>10 % de remise immédiate</strong> sur tout le catalogue. Aucune réservation en ligne. Vous repartez avec un bon et une facture. Le bon n'est pas daté à l'heure près : vous l'utilisez plus tard, directement sur la base qui opère l'activité. Il est offrable — parfait pour faire plaisir.</p>
+
+<h2>Sur place à Roquebrune-sur-Argens, en dehors des horaires du comptoir</h2>
+<p>Si vous logez à Roquebrune-sur-Argens ou près du lac de l'Aréna, un rendez-vous d'achat est aussi possible directement sur place, <strong>tôt le matin (7h30-8h30)</strong> ou <strong>en soirée après 19h</strong>, en dehors des horaires du comptoir de La Gaillarde. Ce rendez-vous se prend uniquement par téléphone.</p>
+
 <p>Une question avant de venir ? Appelez le <strong>06 50 26 94 75</strong>.</p>`,
     faq: [
       { question: "Quelle activité nautique faire à Roquebrune-sur-Argens ?", answer: "Le grand rendez-vous est le parc aquatique géant du lac de l'Aréna : jeux gonflables, tour de saut de 12 m dès 8 ans, espace enfants de 2 à 8 ans, accrobranche, tyrolienne, trampolines, ainsi que pédalos, kayaks et paddles. Tout se réserve au comptoir de La Gaillarde, aux Issambres, avec 10 % de remise.", answered: true },
@@ -102,6 +106,7 @@ export const villes: Ville[] = [
       { question: "À partir de quel âge peut-on profiter du parc aquatique ?", answer: "Il y a un espace pour les 2 à 8 ans, une tour de saut de 12 m accessible dès 8 ans et un parcours accessible dès 2 ans. Pour l'âge ou la taille minimum précis de chaque structure, confirmez au comptoir de La Gaillarde : appelez le 06 50 26 94 75.", answered: true },
       { question: "Le bon peut-il être offert ?", answer: "Oui. Le bon remis au comptoir est offrable et n'est pas daté à l'heure près. Vous, ou la personne à qui vous l'offrez, l'utilisez plus tard sur la base qui opère l'activité.", answered: true },
       { question: "Y a-t-il un parking sur place au lac de l'Aréna ?", answer: "Oui, un grand parking gratuit est disponible sur place, à Roquebrune-sur-Argens, avec restauration 7j/7, tables de pique-nique, vestiaires et casiers.", answered: true },
+      { question: "Peut-on acheter sur place à Roquebrune-sur-Argens sans passer par le comptoir de La Gaillarde ?", answer: "Oui, sur rendez-vous. En dehors des horaires du comptoir de La Gaillarde, un rendez-vous d'achat est possible directement à Roquebrune-sur-Argens, tôt le matin (7h30-8h30) ou après 19h le soir. Ce rendez-vous se prend uniquement par téléphone, au 06 50 26 94 75.", answered: true },
     ],
   },
   {

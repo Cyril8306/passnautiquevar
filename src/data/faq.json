@@ -446,8 +446,16 @@
         {
           "question": "Quels sont les horaires d'ouverture de la base ?",
           "isAI": false,
-          "status": "a_valider",
-          "validerLabel": "horaires d'ouverture de la base nautique de La Gaillarde"
+          "status": "answered",
+          "lead": "Le comptoir de La Gaillarde est ouvert tous les jours de 9h à 19h en juillet et août. En dehors de ces horaires, un rendez-vous d'achat reste possible à Roquebrune-sur-Argens, tôt le matin ou en soirée.",
+          "dev": "Pour les horaires de juin et septembre, appelez le comptoir avant de venir : 06 50 26 94 75. Si les horaires du comptoir de La Gaillarde ne vous arrangent pas, un rendez-vous est aussi possible à Roquebrune-sur-Argens, près du lac de l'Aréna, de 7h30 à 8h30 le matin ou après 19h le soir, uniquement sur appel préalable au même numéro."
+        },
+        {
+          "question": "Peut-on acheter en dehors des horaires du comptoir de La Gaillarde ?",
+          "isAI": true,
+          "status": "answered",
+          "lead": "Oui. Un rendez-vous d'achat est possible à Roquebrune-sur-Argens, près du lac de l'Aréna, tôt le matin (7h30-8h30) ou en soirée après 19h, en dehors des horaires du comptoir de La Gaillarde.",
+          "dev": "Ce rendez-vous se prend uniquement par téléphone, au 06 50 26 94 75 : vous convenez d'un horaire, vous réglez sur place et vous repartez avec votre bon, avec la même remise de 10 % que celle du comptoir de La Gaillarde. C'est une solution pratique si vous logez du côté de Roquebrune-sur-Argens ou du lac de l'Aréna, ou si vos journées ne vous laissent que tôt le matin ou tard le soir."
         },
         {
           "question": "Que faire aux Issambres quand il y a du vent ?",
