@@ -240,6 +240,7 @@ details p { margin: 1rem 0 0; font-size: .97rem; color: var(--grey); max-width: 
 .hero-tel a { color: var(--yellow); font-weight: 700; text-decoration: none; }
 .hero-trust { margin-top: 1.2rem; font-family: var(--mono); font-size: .72rem; letter-spacing: .08em; color: rgba(255, 255, 255, .85); }
 .hero-trust strong { color: var(--yellow); }
+.weather { margin-top: .8rem; font-family: var(--mono); font-size: .7rem; letter-spacing: .05em; color: rgba(255, 255, 255, .9); }
 
 footer { background: var(--coal); color: var(--grey); padding: 3rem 0; font-size: .9rem; border-top: 1px solid var(--line); }
 footer .mark { margin-bottom: 1.2rem; color: var(--white); text-shadow: none; display: inline-block; }

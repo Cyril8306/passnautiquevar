@@ -97,9 +97,25 @@ const schema = [
         </div>
         <p class="hero-trust"><strong>★ 4,4 / 5</strong> · 121 avis Google · base de La Gaillarde</p>
         <p class="hero-tel">Une question ? Appelez le <a href={`tel:${site.phoneIntl}`}>{site.phone}</a></p>
+        <p class="weather" id="pnv-weather" hidden></p>
       </div>
     </div>
   </header>
+
+  <script>
+    (async () => {
+      const el = document.getElementById('pnv-weather');
+      if (!el) return;
+      try {
+        const res = await fetch('https://api.open-meteo.com/v1/forecast?latitude=43.3486&longitude=6.7148&current=temperature_2m,weather_code,wind_speed_10m&timezone=Europe%2FParis');
+        const c = (await res.json()).current;
+        const W = { 0: '☀️ ciel dégagé', 1: '🌤️ peu nuageux', 2: '⛅ nuageux', 3: '☁️ couvert', 45: '🌫️ brouillard', 48: '🌫️ brouillard', 51: '🌦️ bruine', 53: '🌦️ bruine', 55: '🌦️ bruine', 61: '🌧️ pluie', 63: '🌧️ pluie', 65: '🌧️ forte pluie', 80: '🌦️ averses', 81: '🌦️ averses', 82: '🌦️ fortes averses', 95: '⛈️ orage' };
+        const label = W[c.weather_code] || '';
+        el.textContent = "Aujourd'hui à La Gaillarde : " + label + ' ' + Math.round(c.temperature_2m) + '° · vent ' + Math.round(c.wind_speed_10m) + ' km/h';
+        el.hidden = false;
+      } catch (e) { /* silencieux */ }
+    })();
+  </script>
 
   <section class="promo">
     <div class="wrap">
@@ -144,7 +160,7 @@ const schema = [
     </div>
     <div class="feature rv">
       <div class="ph scrim">
-        <img src="/media/feat-arena.webp" alt="Parc aquatique gonflable géant sur le lac de l'Arena, avec toboggans et structures flottantes" width="720" height="1000" loading="lazy" />
+        <img src="/media/feat-arena.webp" alt="Parc aquatique gonflable géant sur le lac de l'Aréna à Roquebrune-sur-Argens, avec le rocher en fond" width="1200" height="800" loading="lazy" />
       </div>
       <div class="feature-in">
         <div class="wrap">
