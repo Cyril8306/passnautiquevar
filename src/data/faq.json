@@ -124,8 +124,9 @@
         {
           "question": "À partir de quel âge peut-on accéder au parc aquatique ?",
           "isAI": true,
-          "status": "a_valider",
-          "validerLabel": "âge minimum d'accès au parc aquatique de l'Aréna"
+          "status": "answered",
+          "lead": "Le parc aquatique de l'Aréna est pensé pour tous les âges. Un espace est dédié aux enfants de 2 à 8 ans, une tour de saut de 12 m est accessible dès 8 ans, et l'un des parcours est accessible dès 2 ans. Il y a une zone adaptée à chaque enfant.",
+          "dev": "Concrètement, les tout-petits profitent d'un espace à leur mesure pendant que les plus grands s'attaquent aux structures gonflables, aux toboggans et à la tour de saut. Pour l'âge ou la taille minimum précis de chaque attraction, le mieux reste de confirmer au comptoir de la Base de La Gaillarde, aux Issambres, avant de venir. Vous y réglez l'accès, en pass demi-journée ou journée, avec 10 % de remise. Le comptoir répond au 06 50 26 94 75."
         },
         {
           "question": "Faut-il savoir nager pour le parc aquatique ?",
@@ -161,14 +162,16 @@
         {
           "question": "Peut-on apporter son pique-nique ?",
           "isAI": true,
-          "status": "a_valider",
-          "validerLabel": "pique-nique autorisé ou non au parc aquatique"
+          "status": "answered",
+          "lead": "Oui. Le parc aquatique de l'Aréna met des tables de pique-nique à disposition : vous pouvez apporter votre repas et déjeuner sur place, entre deux baignades. C'est une option économique pour une sortie à la journée en famille.",
+          "dev": "Et si vous ne voulez rien préparer, le parc propose aussi de la restauration ouverte 7j/7 : un restaurant, un snack et un bar. Vous disposez également de vestiaires, de casiers et d'un grand parking gratuit sur place, à Roquebrune-sur-Argens. L'accès au parc, en pass demi-journée ou journée, se règle au comptoir de la Base de La Gaillarde, aux Issambres, avec 10 % de remise, et votre bon s'utilise le jour qui vous arrange. Une question ? Appelez le 06 50 26 94 75."
         },
         {
           "question": "Y a-t-il un restaurant ou un snack sur place ?",
           "isAI": false,
-          "status": "a_valider",
-          "validerLabel": "présence d'un restaurant ou snack au parc aquatique"
+          "status": "answered",
+          "lead": "Oui. Le parc aquatique de l'Aréna propose plusieurs points de restauration sur place, ouverts 7j/7 : un restaurant, un snack et un bar. Vous déjeunez ou grignotez sans quitter le parc, entre deux passages sur les structures.",
+          "dev": "Pratique pour une journée entière : vous n'êtes pas obligé de prévoir votre repas. Si vous préférez apporter le vôtre, des tables de pique-nique sont à disposition. Le parc dispose aussi de vestiaires, de casiers et d'un grand parking gratuit, à Roquebrune-sur-Argens. Vous réglez votre accès, en pass demi-journée ou journée, au comptoir de la Base de La Gaillarde, aux Issambres, avec 10 % de remise. Pour les horaires précis de la restauration, appelez le comptoir au 06 50 26 94 75."
         },
         {
           "question": "Combien de temps faut-il prévoir pour une journée au parc ?",
@@ -185,8 +188,9 @@
         {
           "question": "Le parking est-il gratuit ?",
           "isAI": true,
-          "status": "a_valider",
-          "validerLabel": "gratuité du parking au parc aquatique de l'Aréna"
+          "status": "answered",
+          "lead": "Oui. Le parc aquatique du lac de l'Aréna, à Roquebrune-sur-Argens, dispose d'un grand parking gratuit. Vous vous garez sans frais avant de rejoindre le parc de jeux gonflables installé sur l'eau.",
+          "dev": "C'est un vrai plus pour une sortie à la journée en famille : aucun frais de stationnement à ajouter au budget. Sur place, le parc propose aussi des vestiaires, des casiers et de la restauration ouverte 7j/7. Vous réservez votre accès, en pass demi-journée ou journée, au comptoir de la Base de La Gaillarde, aux Issambres, avec 10 % de remise. Vous vous rendez ensuite au parc le jour qui vous arrange, votre bon n'étant pas daté à l'heure près. Pour l'itinéraire précis jusqu'au lac de l'Aréna, appelez le comptoir au 06 50 26 94 75."
         }
       ]
     },
