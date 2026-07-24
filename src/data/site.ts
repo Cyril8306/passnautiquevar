@@ -14,7 +14,7 @@ export const site = {
   phoneIntl: '+33650269475',
 
   // Lieu
-  place: 'Base nautique de La Gaillarde',
+  place: 'Base nautique de La Gaillarde (El Moritto Plage)',
   street: 'Plage de La Gaillarde', // TODO Cyril : numéro / voie exacte
   town: 'Les Issambres',
   city: 'Roquebrune-sur-Argens',
@@ -26,8 +26,9 @@ export const site = {
   // (valeur actuelle = approximation plage de La Gaillarde, à confirmer)
   geo: { lat: 43.3486, lng: 6.7148 },
 
-  // Horaires — TODO Cyril : confirmer les horaires réels de la saison
-  hoursHuman: 'Tous les jours en saison, de 9h à 19h', // à confirmer
+  // Horaires — confirmés pour juillet-août (document tarifs El Moritto Plage).
+  // TODO Cyril : horaires de juin et septembre (basse saison) à confirmer.
+  hoursHuman: 'Tous les jours, de 9h à 19h en juillet-août',
   opening: { days: 'Mo,Tu,We,Th,Fr,Sa,Su', opens: '09:00', closes: '19:00' },
 
   // Itinéraire (ouvre Google Maps vers la base)

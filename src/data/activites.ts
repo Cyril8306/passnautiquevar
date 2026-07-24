@@ -125,7 +125,7 @@ export const activites: Activite[] = [
 <p>Les sessions sont encadrées. Le détail du matériel fourni, le nombre de séances pour tenir debout et les conditions précises se confirment directement au comptoir. On vous oriente vers l'activité qui vous convient.</p>`,
     faq: [
       { question: "Quelle est la différence entre ski nautique et wakeboard ?", answer: "Le ski nautique se pratique sur deux skis, un pied sur chacun. Le wakeboard utilise une planche unique, les pieds placés en travers, pour sauter sur la vague du bateau.", answered: true },
-      { question: "À partir de quel âge un enfant peut-il commencer ?", answer: "Le baby-ski est pensé comme une première approche pour les jeunes enfants. L'âge exact à partir duquel un enfant peut commencer se confirme au comptoir de La Gaillarde : appelez le 06 50 26 94 75.", answered: false },
+      { question: "À partir de quel âge un enfant peut-il commencer ?", answer: "Le baby-ski est réservé aux enfants de moins de 10 ans : c'est la première approche avant de passer au ski nautique ou au wakeboard classique. L'âge minimum exact au sein de cette tranche se confirme au comptoir de La Gaillarde : appelez le 06 50 26 94 75.", answered: true },
       { question: "Combien de séances faut-il pour tenir debout ?", answer: "Cette information se confirme au comptoir de La Gaillarde : appelez le 06 50 26 94 75.", answered: false },
       { question: "Le matériel est-il fourni ?", answer: "Le détail du matériel fourni se confirme au comptoir de La Gaillarde : appelez le 06 50 26 94 75.", answered: false },
       { question: "Comment obtenir les 10 % de remise ?", answer: "Rendez-vous au comptoir de la Base de La Gaillarde, aux Issambres. Vous réservez et payez sur place, avec 10 % de remise immédiate sur tout le catalogue. Aucune réservation en ligne.", answered: true },
@@ -143,7 +143,7 @@ export const activites: Activite[] = [
     contentHtml: `<h2>Deux façons de prendre le large</h2>
 <p>Envie de mer au départ des Issambres et du golfe de Saint-Tropez ? Deux formules simples.</p>
 <p><strong>Bateau sans permis :</strong> vous pilotez vous-même. Aucun permis n'est requis pour cette catégorie de location. Un briefing vous est donné au départ, puis vous filez sur l'eau à votre rythme.</p>
-<p><strong>Balade en bateau avec skipper :</strong> vous êtes passager, un skipper tient la barre. Jusqu'à 12 personnes à bord. Idéal en famille ou entre amis pour profiter du paysage sans rien gérer.</p>
+<p><strong>Balade en bateau avec skipper :</strong> vous êtes passager, un skipper tient la barre. Idéal en famille ou entre amis pour profiter du paysage sans rien gérer.</p>
 
 <h2>Pour qui ?</h2>
 <ul>
@@ -162,8 +162,8 @@ export const activites: Activite[] = [
 <p>Âge minimum pour piloter, zone de navigation autorisée, carburant, durée : ces détails se confirment au comptoir, selon la formule choisie.</p>`,
     faq: [
       { question: "Faut-il un permis pour la location de bateau sans permis ?", answer: "Non. Pour cette catégorie de location, aucun permis n'est requis. Vous pilotez vous-même après un briefing donné au départ.", answered: true },
-      { question: "Quelle est la différence entre le bateau sans permis et la balade avec skipper ?", answer: "Avec le bateau sans permis, vous pilotez vous-même. Avec la balade encadrée, un skipper tient la barre et vous êtes passager, jusqu'à 12 personnes à bord.", answered: true },
-      { question: "Combien de personnes peuvent monter à bord de la balade avec skipper ?", answer: "Jusqu'à 12 personnes à bord pour la balade encadrée par un skipper.", answered: true },
+      { question: "Quelle est la différence entre le bateau sans permis et la balade avec skipper ?", answer: "Avec le bateau sans permis, vous pilotez vous-même. Avec la balade encadrée, un skipper tient la barre et vous êtes passager.", answered: true },
+      { question: "Combien de personnes peuvent monter à bord de la balade avec skipper ?", answer: "Le nombre de places dépend du bateau utilisé ce jour-là. Confirmez la capacité au comptoir de La Gaillarde avant de réserver : 06 50 26 94 75.", answered: false },
       { question: "Comment obtenir les 10 % de remise ?", answer: "En passant au comptoir de La Gaillarde, aux Issambres. Vous réservez et payez sur place, et la remise de 10 % s'applique immédiatement sur tout le catalogue. Il n'y a pas de réservation en ligne.", answered: true },
       { question: "Le bon peut-il être offert en cadeau ?", answer: "Oui. Le bon est offrable et n'est pas daté à l'heure près : la personne choisit son moment plus tard, sur la base qui opère l'activité.", answered: true },
       { question: "Quel est l'âge minimum pour piloter et quelle est la zone de navigation ?", answer: "Cette information se confirme au comptoir de La Gaillarde : appelez le 06 50 26 94 75.", answered: false },
