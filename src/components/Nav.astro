@@ -4,6 +4,9 @@ import { site } from '../data/site';
 <nav class="nav">
   <div class="wrap">
     <a class="mark" href="/">Pass<b>Nautique</b>Var</a>
-    <a class="navloc" href={`tel:${site.phoneIntl}`}>{site.town} · {site.phone}</a>
+    <a class="navbadge" href={`tel:${site.phoneIntl}`} aria-label={`Appeler la base de La Gaillarde au ${site.phone}`}>
+      <span class="navbadge-loc">Plage de La Gaillarde</span>
+      <span class="navbadge-tel">{site.phone}</span>
+    </a>
   </div>
 </nav>
