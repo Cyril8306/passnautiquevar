@@ -54,6 +54,8 @@ const schema = [
         dayOfWeek: days,
         opens: site.opening.opens,
         closes: site.opening.closes,
+        validFrom: '2026-07-01',
+        validThrough: '2026-08-31',
       },
     ],
     areaServed: areaServed.map((a) => ({ '@type': 'City', name: a })),

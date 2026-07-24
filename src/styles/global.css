@@ -108,7 +108,7 @@ a:focus-visible, summary:focus-visible { outline: 3px solid var(--yellow); outli
 .gallery-item { position: relative; aspect-ratio: 1 / 1; overflow: hidden; margin: 0; border: 1px solid var(--line); }
 .gallery-item img, .gallery-item video { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; transition: transform .6s cubic-bezier(.2, .7, .2, 1); }
 .gallery-item:hover img { transform: scale(1.05); }
-.gallery-item--wide { grid-column: span 2; }
+.gallery-item--wide { grid-column: span 2; aspect-ratio: 2 / 1; }
 
 .hero { position: relative; min-height: 95svh; display: flex; align-items: flex-end; overflow: hidden; }
 .ph { position: absolute; inset: 0; overflow: hidden; }

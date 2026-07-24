@@ -37,9 +37,10 @@ export const site = {
 };
 
 // Villes couvertes (rayon d'achat) — sert au schema areaServed
+// Doit correspondre exactement aux pages /activites-nautiques/[ville]/ publiées (site/src/data/villes.ts).
 export const areaServed = [
   'Agay', 'Saint-Raphaël', 'Fréjus', 'Saint-Aygulf', 'Les Issambres',
-  'Roquebrune-sur-Argens', 'Sainte-Maxime', 'Grimaud', 'Saint-Tropez', 'Ramatuelle',
+  'Roquebrune-sur-Argens', 'Sainte-Maxime', 'Ramatuelle',
 ];
 
 // Bandeau défilant — les activités phares

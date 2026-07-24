@@ -324,8 +324,9 @@
         {
           "question": "À partir de quel âge un enfant peut-il commencer ?",
           "isAI": true,
-          "status": "a_valider",
-          "validerLabel": "âge à partir duquel un enfant peut commencer le ski nautique / wakeboard"
+          "status": "answered",
+          "lead": "Le baby-ski est réservé aux enfants de moins de 10 ans : c'est la première approche avant de passer au ski nautique ou au wakeboard classique.",
+          "dev": "L'âge minimum exact au sein de cette tranche se confirme au comptoir de La Gaillarde, selon le niveau de l'enfant. Pour le ski nautique et le wakeboard classiques, au-delà de 10 ans, il n'y a pas d'âge maximum : tout dépend du niveau et de l'envie. Appelez le 06 50 26 94 75 pour caler la session la plus adaptée."
         },
         {
           "question": "Qu'est-ce que le baby-ski ?",
