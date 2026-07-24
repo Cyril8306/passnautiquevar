@@ -192,6 +192,14 @@ section { padding: var(--pad) 0; }
   padding: .45rem .85rem;
   margin-bottom: 1.1rem;
 }
+.badge--promo {
+  background: #e8321a;
+  color: var(--white);
+  font-size: .92rem;
+  padding: .8rem 1.4rem;
+  letter-spacing: .12em;
+  box-shadow: 0 10px 28px -10px rgba(232, 50, 26, .65);
+}
 
 .grid { display: grid; gap: 1.2rem; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); margin-top: 1.2rem; }
 .card { position: relative; aspect-ratio: 4/5; overflow: hidden; display: flex; align-items: flex-end; text-decoration: none; background: linear-gradient(150deg, #16160b 0%, #0b0b0b 55%, #080808 100%); }
