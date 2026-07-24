@@ -1,5 +1,6 @@
 ---
 // Planificateur statique (3 clics -> une activité conseillée). Aucune IA, aucun serveur, gratuit.
+import { site } from '../data/site';
 ---
 <section class="planner" id="planner">
   <div class="wrap">
@@ -12,19 +13,19 @@
       <div class="planner-step" data-step="1">
         <p class="planner-q">Vous êtes plutôt…</p>
         <div class="planner-opts" data-key="profile">
-          <button type="button" data-value="famille">Famille avec jeunes enfants</button>
-          <button type="button" data-value="sensations">En quête de sensations</button>
-          <button type="button" data-value="calme">Envie de calme</button>
-          <button type="button" data-value="groupe">Groupe / anniversaire</button>
+          <button type="button" data-value="famille"><span>👨‍👩‍👧</span> Famille avec jeunes enfants</button>
+          <button type="button" data-value="sensations"><span>🔥</span> En quête de sensations</button>
+          <button type="button" data-value="calme"><span>🌊</span> Envie de calme</button>
+          <button type="button" data-value="groupe"><span>🎉</span> Groupe / anniversaire</button>
         </div>
       </div>
 
       <div class="planner-step" data-step="2" hidden>
         <p class="planner-q">Vous avez…</p>
         <div class="planner-opts" data-key="duree">
-          <button type="button" data-value="heure">Une heure</button>
-          <button type="button" data-value="demi">Une demi-journée</button>
-          <button type="button" data-value="journee">La journée</button>
+          <button type="button" data-value="heure"><span>⏱️</span> Une heure</button>
+          <button type="button" data-value="demi"><span>🌤️</span> Une demi-journée</button>
+          <button type="button" data-value="journee"><span>☀️</span> La journée</button>
         </div>
       </div>
 
@@ -33,9 +34,10 @@
         <h3 class="planner-r-name" data-r-name></h3>
         <p class="planner-r-text" data-r-text></p>
         <div class="planner-r-cta">
-          <a class="btn btn-y" data-r-link href="/">Voir l'activité</a>
-          <button type="button" class="btn btn-o" data-planner-reset>Recommencer</button>
+          <a class="btn btn-y" data-r-itinerary href={site.mapsUrl} target="_blank" rel="noopener">Itinéraire vers cette activité</a>
+          <a class="btn btn-o" data-r-link href="/">En savoir plus</a>
         </div>
+        <button type="button" class="planner-reset" data-planner-reset>↺ Recommencer le quiz</button>
       </div>
     </div>
   </div>

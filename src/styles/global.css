@@ -320,16 +320,39 @@ footer a { color: var(--yellow); }
 .popup-note { font-family: var(--mono); font-size: .6rem; letter-spacing: .08em; color: var(--grey); margin: 0; }
 
 /* ---- Planificateur ---- */
-.planner-box { max-width: 640px; margin-top: 1.6rem; background: var(--coal); border: 1px solid var(--line); padding: 2rem; }
-.planner-q { font-family: var(--display); font-size: clamp(1.2rem, 3.2vw, 1.6rem); text-transform: uppercase; margin: 0 0 1.3rem; }
-.planner-opts { display: flex; flex-wrap: wrap; gap: .7rem; }
-.planner-opts button { font-family: var(--body); font-size: .92rem; font-weight: 500; color: var(--white); background: rgba(255, 255, 255, .05); border: 1px solid var(--line); padding: .85rem 1.2rem; cursor: pointer; transition: background .18s, border-color .18s, color .18s; }
-.planner-opts button:hover { background: var(--yellow); color: var(--black); border-color: var(--yellow); }
+.planner-box {
+  max-width: 640px; margin-top: 1.6rem; padding: 2.3rem 2rem; position: relative; overflow: hidden;
+  background: radial-gradient(120% 140% at 10% 0%, rgba(255, 227, 0, .14), transparent 55%), var(--coal);
+  border: 2px solid rgba(255, 227, 0, .5);
+  box-shadow: 0 25px 60px -25px rgba(255, 227, 0, .35), 0 0 0 1px rgba(255, 227, 0, .07) inset;
+  animation: plannerglow 3.4s ease-in-out infinite;
+}
+@keyframes plannerglow {
+  0%, 100% { box-shadow: 0 25px 60px -25px rgba(255, 227, 0, .35), 0 0 0 1px rgba(255, 227, 0, .07) inset; }
+  50% { box-shadow: 0 25px 70px -20px rgba(255, 227, 0, .6), 0 0 0 1px rgba(255, 227, 0, .16) inset; }
+}
+.planner-box::after { content: "🎯"; position: absolute; top: -18px; right: 8px; font-size: 4.5rem; opacity: .1; transform: rotate(14deg); pointer-events: none; }
+.planner-q { font-family: var(--display); font-size: clamp(1.35rem, 3.8vw, 1.85rem); text-transform: uppercase; margin: 0 0 1.5rem; }
+.planner-opts { display: flex; flex-wrap: wrap; gap: .8rem; }
+.planner-opts button {
+  font-family: var(--display); font-size: 1.02rem; letter-spacing: .01em; text-transform: uppercase;
+  color: var(--white); background: rgba(255, 227, 0, .08); border: 2px solid rgba(255, 227, 0, .4);
+  padding: 1.05rem 1.4rem; cursor: pointer; display: inline-flex; align-items: center; gap: .6rem;
+  transition: background .18s, border-color .18s, color .18s, transform .18s, box-shadow .18s;
+}
+.planner-opts button span { font-size: 1.2rem; }
+.planner-opts button:hover {
+  background: var(--yellow); color: var(--black); border-color: var(--yellow);
+  transform: translateY(-4px) scale(1.03); box-shadow: 0 16px 32px -10px rgba(255, 227, 0, .6);
+}
 .planner-r-label { font-family: var(--mono); font-size: .64rem; letter-spacing: .2em; text-transform: uppercase; color: var(--yellow); margin: 0 0 .6rem; }
-.planner-r-name { font-family: var(--display); text-transform: uppercase; font-size: clamp(1.5rem, 4vw, 2.1rem); margin: 0 0 .8rem; }
-.planner-r-text { color: var(--grey); font-size: .98rem; margin: 0 0 1.5rem; max-width: 55ch; }
-.planner-r-cta { display: flex; gap: .8rem; flex-wrap: wrap; }
-.planner-r-cta button.btn { font-family: var(--display); }
+.planner-r-name { font-family: var(--display); text-transform: uppercase; font-size: clamp(1.6rem, 4.4vw, 2.3rem); margin: 0 0 .8rem; }
+.planner-r-text { color: var(--grey); font-size: .98rem; margin: 0 0 1.6rem; max-width: 55ch; }
+.planner-r-cta { display: flex; gap: .8rem; flex-wrap: wrap; margin-bottom: 1.1rem; }
+.planner-reset { background: none; border: none; color: var(--grey); font-family: var(--mono); font-size: .72rem; letter-spacing: .08em; text-transform: uppercase; cursor: pointer; padding: .4rem 0; text-decoration: underline; text-underline-offset: 3px; }
+.planner-reset:hover { color: var(--yellow); }
+
+@media (prefers-reduced-motion: reduce) { .planner-box { animation: none; } }
 
 /* ---- Liens footer ---- */
 .footer-nav { display: flex; flex-wrap: wrap; gap: .4rem 1.6rem; margin: 1.4rem 0; }
