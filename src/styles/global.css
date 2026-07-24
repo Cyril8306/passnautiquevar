@@ -122,7 +122,7 @@ a:focus-visible, summary:focus-visible { outline: 3px solid var(--yellow); outli
   background: linear-gradient(to top, rgba(8, 8, 8, .96) 6%, rgba(8, 8, 8, .55) 42%, rgba(8, 8, 8, .35) 100%);
 }
 .hero-in { position: relative; z-index: 3; padding: 2.4rem 0 3.4rem; width: 100%; }
-.hero-in h1 { margin-bottom: 1.3rem; }
+.hero-in h1 { font-size: clamp(2rem, 5.4vw, 3.7rem); margin-bottom: 1.3rem; }
 .hero-in h1 span { display: block; }
 .lede {
   font-size: clamp(1.03rem, 2.4vw, 1.28rem);

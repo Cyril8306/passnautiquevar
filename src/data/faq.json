@@ -8,20 +8,20 @@
           "isAI": true,
           "status": "answered",
           "lead": "Vous réservez directement au comptoir de la Base nautique de La Gaillarde, sur la plage des Issambres (83380). Pas de site, pas de compte à créer. Vous passez, vous payez sur place, et vous repartez avec un bon et une facture, utilisables plus tard, le jour qui vous arrange.",
-          "dev": "Ce passage au comptoir déclenche aussi 10 % de remise immédiate sur tout le catalogue des 12 bases du réseau. Un seul comptoir gère ce réseau, d'Agay à Pampelonne : vous n'avez donc pas besoin de vous déplacer sur chaque base. Vous choisissez vos activités, vous réglez tout en une fois, même pour plusieurs personnes, et chaque activité est ensuite honorée sur la base qui l'opère. Le bon n'est pas daté à l'heure près : vous fixez votre journée comme vous voulez. Une question ? Le comptoir répond au 06 50 26 94 75."
+          "dev": "Ce passage au comptoir déclenche aussi 10 % de remise immédiate sur tout le catalogue des 10 bases du réseau. Un seul comptoir gère ce réseau, d'Agay à Pampelonne : vous n'avez donc pas besoin de vous déplacer sur chaque base. Vous choisissez vos activités, vous réglez tout en une fois, même pour plusieurs personnes, et chaque activité est ensuite honorée sur la base qui l'opère. Le bon n'est pas daté à l'heure près : vous fixez votre journée comme vous voulez. Une question ? Le comptoir répond au 06 50 26 94 75."
         },
         {
           "question": "Peut-on réserver en ligne ou faut-il venir sur place ?",
           "isAI": true,
           "status": "answered",
           "lead": "Sur place, uniquement. Il n'y a pas de réservation en ligne et aucun compte à créer pour Pass Nautique Var. Vous venez au comptoir de la Base nautique de La Gaillarde, aux Issambres, vous réglez, et vous repartez avec votre bon et votre facture.",
-          "dev": "C'est justement ce passage physique qui vous fait gagner de l'argent : il donne 10 % de remise immédiate sur tout le catalogue des 12 bases du réseau, d'Agay à Pampelonne. Le bon obtenu n'est pas daté à l'heure près, donc vous l'utilisez le jour qui vous arrange, sur la base qui opère l'activité choisie. Vous pouvez régler plusieurs activités et plusieurs personnes en un seul passage. Le comptoir se trouve directement sur la plage de La Gaillarde. Pour préparer votre venue, appelez le 06 50 26 94 75."
+          "dev": "C'est justement ce passage physique qui vous fait gagner de l'argent : il donne 10 % de remise immédiate sur tout le catalogue des 10 bases du réseau, d'Agay à Pampelonne. Le bon obtenu n'est pas daté à l'heure près, donc vous l'utilisez le jour qui vous arrange, sur la base qui opère l'activité choisie. Vous pouvez régler plusieurs activités et plusieurs personnes en un seul passage. Le comptoir se trouve directement sur la plage de La Gaillarde. Pour préparer votre venue, appelez le 06 50 26 94 75."
         },
         {
           "question": "Pourquoi les tarifs sont-ils moins chers au comptoir ?",
           "isAI": true,
           "status": "answered",
-          "lead": "Parce que le passage au comptoir de La Gaillarde donne 10 % de remise immédiate sur tout le catalogue des 12 bases du réseau. C'est le principe de Pass Nautique Var : vous réservez et payez sur place, et cette remise s'applique à l'ensemble des activités.",
+          "lead": "Parce que le passage au comptoir de La Gaillarde donne 10 % de remise immédiate sur tout le catalogue des 10 bases du réseau. C'est le principe de Pass Nautique Var : vous réservez et payez sur place, et cette remise s'applique à l'ensemble des activités.",
           "dev": "La remise de 10 % vaut sur tout : parc aquatique, parachute ascensionnel, ski nautique, wakeboard, bouées tractées, bateau, kayak, paddle, accrobranche. Vous réglez au comptoir, sur la plage des Issambres, puis vous repartez avec un bon et une facture. Le bon n'est pas daté à l'heure près, donc rien ne presse : vous l'utilisez le jour qui vous arrange, sur la base qui opère l'activité. Vous pouvez aussi régler plusieurs activités et plusieurs personnes en une seule fois, la remise s'appliquant à chaque ligne. Renseignements au 06 50 26 94 75."
         },
         {
@@ -35,7 +35,7 @@
           "isAI": true,
           "status": "answered",
           "lead": "Oui. Le bon est offrable : cadeau, anniversaire, fin de séjour. Vous passez au comptoir de La Gaillarde, vous réglez l'activité avec 10 % de remise, et vous repartez avec un bon que la personne de votre choix utilisera plus tard.",
-          "dev": "Le bon n'est pas daté à l'heure près, donc celui qui le reçoit choisit librement sa journée, sur la base qui opère l'activité. Vous pouvez offrir une seule activité ou en combiner plusieurs, pour une ou plusieurs personnes, le tout réglé en un seul passage au comptoir. C'est pratique pour un cadeau commun ou une surprise de fin de vacances. La remise de 10 % s'applique sur tout le catalogue des 12 bases du réseau, d'Agay à Pampelonne. Pour organiser votre cadeau, passez sur la plage des Issambres ou appelez le 06 50 26 94 75."
+          "dev": "Le bon n'est pas daté à l'heure près, donc celui qui le reçoit choisit librement sa journée, sur la base qui opère l'activité. Vous pouvez offrir une seule activité ou en combiner plusieurs, pour une ou plusieurs personnes, le tout réglé en un seul passage au comptoir. C'est pratique pour un cadeau commun ou une surprise de fin de vacances. La remise de 10 % s'applique sur tout le catalogue des 10 bases du réseau, d'Agay à Pampelonne. Pour organiser votre cadeau, passez sur la plage des Issambres ou appelez le 06 50 26 94 75."
         },
         {
           "question": "Que se passe-t-il s'il fait mauvais le jour prévu ?",
@@ -48,7 +48,7 @@
           "isAI": false,
           "status": "answered",
           "lead": "Oui, sans problème. En un seul passage au comptoir de La Gaillarde, vous réglez plusieurs activités et plusieurs personnes à la fois. Chacune profite des 10 % de remise, et vous repartez avec vos bons et votre facture.",
-          "dev": "C'est le principe même de Pass Nautique Var : un seul comptoir sur la plage des Issambres gère le catalogue des 12 bases du réseau. Vous pouvez donc combiner, par exemple, parachute ascensionnel, bouées tractées, parc aquatique et kayak dans le même règlement. Chaque activité est ensuite honorée sur la base qui l'opère, le jour qui vous arrange, puisque les bons ne sont pas datés à l'heure près. Idéal pour une famille ou un groupe d'amis qui veulent tout caler en une visite. Un doute sur ce que vous voulez réserver ? Appelez le 06 50 26 94 75."
+          "dev": "C'est le principe même de Pass Nautique Var : un seul comptoir sur la plage des Issambres gère le catalogue des 10 bases du réseau. Vous pouvez donc combiner, par exemple, parachute ascensionnel, bouées tractées, parc aquatique et kayak dans le même règlement. Chaque activité est ensuite honorée sur la base qui l'opère, le jour qui vous arrange, puisque les bons ne sont pas datés à l'heure près. Idéal pour une famille ou un groupe d'amis qui veulent tout caler en une visite. Un doute sur ce que vous voulez réserver ? Appelez le 06 50 26 94 75."
         },
         {
           "question": "Peut-on payer en carte, espèces, chèques-vacances ?",
@@ -74,7 +74,7 @@
           "isAI": false,
           "status": "answered",
           "lead": "Oui. Au comptoir de La Gaillarde, vous réglez plusieurs activités et plusieurs personnes en un seul passage, avec 10 % de remise sur chaque activité. C'est adapté à une famille, une bande d'amis ou tout groupe qui veut tout organiser d'un coup.",
-          "dev": "Vous composez votre programme dans le catalogue des 12 bases du réseau et vous réglez le tout en une fois, sur la plage des Issambres. Chaque activité est ensuite honorée sur la base qui l'opère, le jour choisi, puisque les bons ne sont pas datés à l'heure près : le groupe se cale sur la date qui l'arrange. Vous repartez avec autant de bons que nécessaire et une facture unique. Pour un groupe nombreux, quelques détails pratiques (créneaux, nombre de participants, activités adaptées) se calent facilement en appelant le comptoir au 06 50 26 94 75 avant de venir."
+          "dev": "Vous composez votre programme dans le catalogue des 10 bases du réseau et vous réglez le tout en une fois, sur la plage des Issambres. Chaque activité est ensuite honorée sur la base qui l'opère, le jour choisi, puisque les bons ne sont pas datés à l'heure près : le groupe se cale sur la date qui l'arrange. Vous repartez avec autant de bons que nécessaire et une facture unique. Pour un groupe nombreux, quelques détails pratiques (créneaux, nombre de participants, activités adaptées) se calent facilement en appelant le comptoir au 06 50 26 94 75 avant de venir."
         },
         {
           "question": "Y a-t-il un tarif famille ou groupe ?",
@@ -94,7 +94,7 @@
           "isAI": true,
           "status": "answered",
           "lead": "Oui, c'est tout à fait faisable. Au comptoir de La Gaillarde, vous réglez plusieurs activités et plusieurs personnes en un seul passage, avec 10 % de remise sur tout. Parfait pour un groupe d'amis qui veut marquer le coup avant un mariage.",
-          "dev": "Vous composez votre programme dans le catalogue des 12 bases du réseau : parachute ascensionnel, bouées tractées, wakeboard, bateau, parc aquatique... et vous réglez le tout en une fois. Chaque activité est honorée sur la base qui l'opère, le jour choisi, puisque les bons ne sont pas datés à l'heure près. Vous pouvez donc caler l'EVJF ou l'EVG sur la date de votre week-end. Pour organiser un groupe (nombre de participants, créneaux, activités qui plairont au groupe), le plus simple est d'appeler le comptoir au 06 50 26 94 75. Le point de réservation est sur la plage des Issambres."
+          "dev": "Vous composez votre programme dans le catalogue des 10 bases du réseau : parachute ascensionnel, bouées tractées, wakeboard, bateau, parc aquatique... et vous réglez le tout en une fois. Chaque activité est honorée sur la base qui l'opère, le jour choisi, puisque les bons ne sont pas datés à l'heure près. Vous pouvez donc caler l'EVJF ou l'EVG sur la date de votre week-end. Pour organiser un groupe (nombre de participants, créneaux, activités qui plairont au groupe), le plus simple est d'appeler le comptoir au 06 50 26 94 75. Le point de réservation est sur la plage des Issambres."
         },
         {
           "question": "Proposez-vous des formules séminaire ou team building ?",
@@ -450,7 +450,7 @@
           "isAI": true,
           "status": "answered",
           "lead": "Le bon Pass Nautique Var n'est pas daté à l'heure près : s'il y a du vent le jour prévu, vous pouvez tout simplement reporter votre activité au jour qui vous arrange. C'est l'un des gros avantages du système de bons du comptoir de La Gaillarde.",
-          "dev": "Vous n'êtes donc pas obligé de sortir en mer coûte que coûte. Le catalogue des 12 bases du réseau propose aussi des activités qui ne dépendent pas des mêmes conditions, comme le parc aquatique de l'Aréna, sur le lac à Roquebrune-sur-Argens, ou l'accrobranche. Vous réglez tout au comptoir, sur la plage des Issambres, avec 10 % de remise, et vous décidez ensuite du meilleur moment. Pour savoir quelles activités sont opérées un jour venteux et lesquelles reporter, appelez le comptoir au 06 50 26 94 75 : ils vous orienteront selon les conditions du moment."
+          "dev": "Vous n'êtes donc pas obligé de sortir en mer coûte que coûte. Le catalogue des 10 bases du réseau propose aussi des activités qui ne dépendent pas des mêmes conditions, comme le parc aquatique de l'Aréna, sur le lac à Roquebrune-sur-Argens, ou l'accrobranche. Vous réglez tout au comptoir, sur la plage des Issambres, avec 10 % de remise, et vous décidez ensuite du meilleur moment. Pour savoir quelles activités sont opérées un jour venteux et lesquelles reporter, appelez le comptoir au 06 50 26 94 75 : ils vous orienteront selon les conditions du moment."
         },
         {
           "question": "Quelles activités sont possibles avec de jeunes enfants ?",
@@ -477,14 +477,14 @@
           "isAI": false,
           "status": "answered",
           "lead": "Oui, exactement. Vous réglez l'ensemble de vos activités au comptoir de la Base nautique de La Gaillarde, en un seul passage, et vous repartez avec autant de bons que nécessaire, plus votre facture. Chaque activité profite des 10 % de remise.",
-          "dev": "C'est tout l'intérêt du système Pass Nautique Var : un seul point de réservation, sur la plage des Issambres, pour tout le catalogue des 12 bases du réseau. Vous pouvez donc prendre des bons pour plusieurs activités et plusieurs personnes d'un coup. Chaque bon n'est pas daté à l'heure près et s'utilise le jour qui vous arrange, sur la base qui opère l'activité concernée. Pratique pour organiser un séjour, une famille ou un groupe sans multiplier les démarches. Pour préparer votre liste avant de venir, vous pouvez appeler le comptoir au 06 50 26 94 75."
+          "dev": "C'est tout l'intérêt du système Pass Nautique Var : un seul point de réservation, sur la plage des Issambres, pour tout le catalogue des 10 bases du réseau. Vous pouvez donc prendre des bons pour plusieurs activités et plusieurs personnes d'un coup. Chaque bon n'est pas daté à l'heure près et s'utilise le jour qui vous arrange, sur la base qui opère l'activité concernée. Pratique pour organiser un séjour, une famille ou un groupe sans multiplier les démarches. Pour préparer votre liste avant de venir, vous pouvez appeler le comptoir au 06 50 26 94 75."
         },
         {
           "question": "Le bon fonctionne-t-il sur toutes les bases du réseau ?",
           "isAI": false,
           "status": "answered",
-          "lead": "Oui. Le bon obtenu au comptoir de La Gaillarde fonctionne sur tout le réseau : il s'utilise sur la base qui opère l'activité que vous avez choisie, parmi les 12 bases couvrant l'Est-Var, d'Agay à Pampelonne. La remise de 10 % vaut sur l'ensemble du catalogue.",
-          "dev": "Concrètement, vous réglez une fois, sur la plage des Issambres, et chaque activité est ensuite honorée là où elle se pratique : le parc aquatique sur le lac de l'Aréna à Roquebrune-sur-Argens, les activités tractées et le bateau en mer, l'accrobranche à son emplacement, etc. Le bon n'étant pas daté à l'heure près, vous choisissez votre journée sur chaque base. C'est ce qui fait la force du réseau : un seul comptoir, un seul règlement, douze bases accessibles. Pour savoir quelle base opère une activité précise, appelez le comptoir au 06 50 26 94 75."
+          "lead": "Oui. Le bon obtenu au comptoir de La Gaillarde fonctionne sur tout le réseau : il s'utilise sur la base qui opère l'activité que vous avez choisie, parmi les 10 bases couvrant l'Est-Var, d'Agay à Pampelonne. La remise de 10 % vaut sur l'ensemble du catalogue.",
+          "dev": "Concrètement, vous réglez une fois, sur la plage des Issambres, et chaque activité est ensuite honorée là où elle se pratique : le parc aquatique sur le lac de l'Aréna à Roquebrune-sur-Argens, les activités tractées et le bateau en mer, l'accrobranche à son emplacement, etc. Le bon n'étant pas daté à l'heure près, vous choisissez votre journée sur chaque base. C'est ce qui fait la force du réseau : un seul comptoir, un seul règlement, dix bases accessibles. Pour savoir quelle base opère une activité précise, appelez le comptoir au 06 50 26 94 75."
         }
       ]
     }
