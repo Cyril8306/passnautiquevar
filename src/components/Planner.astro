@@ -1,0 +1,101 @@
+---
+// Planificateur statique (3 clics -> une activité conseillée). Aucune IA, aucun serveur, gratuit.
+---
+<section class="planner" id="planner">
+  <div class="wrap">
+    <div class="head rv">
+      <p class="eyebrow">2 questions, 10 secondes</p>
+      <h2>Quelle activité <span class="hl">pour vous</span> ?</h2>
+    </div>
+
+    <div class="planner-box rv" data-planner>
+      <div class="planner-step" data-step="1">
+        <p class="planner-q">Vous êtes plutôt…</p>
+        <div class="planner-opts" data-key="profile">
+          <button type="button" data-value="famille">Famille avec jeunes enfants</button>
+          <button type="button" data-value="sensations">En quête de sensations</button>
+          <button type="button" data-value="calme">Envie de calme</button>
+          <button type="button" data-value="groupe">Groupe / anniversaire</button>
+        </div>
+      </div>
+
+      <div class="planner-step" data-step="2" hidden>
+        <p class="planner-q">Vous avez…</p>
+        <div class="planner-opts" data-key="duree">
+          <button type="button" data-value="heure">Une heure</button>
+          <button type="button" data-value="demi">Une demi-journée</button>
+          <button type="button" data-value="journee">La journée</button>
+        </div>
+      </div>
+
+      <div class="planner-result" data-step="result" hidden>
+        <p class="planner-r-label">On vous conseille</p>
+        <h3 class="planner-r-name" data-r-name></h3>
+        <p class="planner-r-text" data-r-text></p>
+        <div class="planner-r-cta">
+          <a class="btn btn-y" data-r-link href="/">Voir l'activité</a>
+          <button type="button" class="btn btn-o" data-planner-reset>Recommencer</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  type Reco = { slug: string; name: string; text: string };
+  const MAP: Record<string, Reco> = {
+    'famille|heure': { slug: 'kayak-paddle-pedalo', name: 'Kayak, paddle ou pédalo', text: "Sur place, à la plage de La Gaillarde, en autonomie et à votre rythme : parfait pour une petite sortie en famille." },
+    'famille|demi': { slug: 'parc-aquatique-arena', name: 'Le parc aquatique géant', text: "Espace dédié aux enfants dès 2 ans, structures pour tous les niveaux : la valeur sûre en famille." },
+    'famille|journee': { slug: 'parc-aquatique-arena', name: 'Le parc aquatique géant', text: "Une journée entière de jeux sur l'eau, restauration sur place, parking gratuit : idéal pour occuper petits et grands." },
+    'sensations|heure': { slug: 'bouees-tractees', name: 'Bouée tractée', text: "Le shoot d'adrénaline le plus rapide à organiser, sur une petite session." },
+    'sensations|demi': { slug: 'ski-nautique-wakeboard', name: 'Ski nautique ou wakeboard', text: "De quoi enchaîner les sessions et progresser sur une demi-journée." },
+    'sensations|journee': { slug: 'parc-aquatique-arena', name: "Le parc aquatique + l'option Xtrem Tower", text: "Tour de saut, structures gonflables et accrobranche : de quoi vider le réservoir d'adrénaline à la journée." },
+    'calme|heure': { slug: 'kayak-paddle-pedalo', name: 'Paddle ou kayak', text: "Une sortie tranquille au fil de l'eau, au départ direct de la plage." },
+    'calme|demi': { slug: 'bateau-sans-permis', name: 'Balade en bateau avec skipper', text: "Vous êtes passager, on s'occupe de tout : profitez juste du paysage." },
+    'calme|journee': { slug: 'bateau-sans-permis', name: 'Balade en bateau avec skipper', text: "Une journée à profiter du large sans rien piloter ni organiser." },
+    'groupe|heure': { slug: 'bouees-tractees', name: 'Bouée tractée', text: "Facile à improviser à plusieurs, entre deux activités." },
+    'groupe|demi': { slug: 'parc-aquatique-arena', name: 'Le parc aquatique géant', text: "De quoi occuper un groupe entier sur des installations variées." },
+    'groupe|journee': { slug: 'parc-aquatique-arena', name: 'Le parc aquatique géant', text: "Le meilleur terrain pour un anniversaire ou une sortie de groupe à la journée." },
+  };
+
+  const root = document.querySelector('[data-planner]');
+  if (root) {
+    const state: { profile?: string; duree?: string } = {};
+    const step1 = root.querySelector('[data-step="1"]') as HTMLElement;
+    const step2 = root.querySelector('[data-step="2"]') as HTMLElement;
+    const stepR = root.querySelector('[data-step="result"]') as HTMLElement;
+
+    function showResult() {
+      const key = `${state.profile}|${state.duree}`;
+      const reco = MAP[key];
+      if (!reco) return;
+      (stepR.querySelector('[data-r-name]') as HTMLElement).textContent = reco.name;
+      (stepR.querySelector('[data-r-text]') as HTMLElement).textContent = reco.text;
+      (stepR.querySelector('[data-r-link]') as HTMLAnchorElement).href = `/${reco.slug}/`;
+      step1.hidden = true;
+      step2.hidden = true;
+      stepR.hidden = false;
+    }
+
+    root.querySelectorAll('[data-key="profile"] button').forEach((btn) => {
+      btn.addEventListener('click', () => {
+        state.profile = (btn as HTMLElement).dataset.value;
+        step1.hidden = true;
+        step2.hidden = false;
+      });
+    });
+    root.querySelectorAll('[data-key="duree"] button').forEach((btn) => {
+      btn.addEventListener('click', () => {
+        state.duree = (btn as HTMLElement).dataset.value;
+        showResult();
+      });
+    });
+    root.querySelector('[data-planner-reset]')?.addEventListener('click', () => {
+      state.profile = undefined;
+      state.duree = undefined;
+      stepR.hidden = true;
+      step1.hidden = false;
+      step2.hidden = true;
+    });
+  }
+</script>

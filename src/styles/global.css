@@ -305,6 +305,29 @@ footer a { color: var(--yellow); }
 .review blockquote { margin: 0 0 1.1rem; font-size: .98rem; color: rgba(255, 255, 255, .9); line-height: 1.55; }
 .review figcaption { font-family: var(--mono); font-size: .61rem; letter-spacing: .12em; text-transform: uppercase; color: var(--grey); }
 
+/* ---- Pop-up bonus (-15%) ---- */
+.popup-overlay { position: fixed; inset: 0; z-index: 100; background: rgba(8, 8, 8, .82); backdrop-filter: blur(3px); display: flex; align-items: center; justify-content: center; padding: 1.4rem; }
+.popup-card { position: relative; max-width: 460px; width: 100%; background: var(--coal); border: 1px solid rgba(255, 227, 0, .4); padding: 2.4rem 2rem 2rem; box-shadow: 0 30px 70px -20px rgba(0, 0, 0, .7); }
+.popup-close { position: absolute; top: .8rem; right: .9rem; background: none; border: none; color: var(--grey); font-size: 1.6rem; line-height: 1; cursor: pointer; padding: .3rem .5rem; }
+.popup-close:hover { color: var(--yellow); }
+.popup-eyebrow { font-family: var(--mono); font-size: .64rem; letter-spacing: .24em; text-transform: uppercase; color: var(--yellow); margin: 0 0 .8rem; }
+.popup-title { font-family: var(--display); font-weight: 400; text-transform: uppercase; font-size: clamp(1.7rem, 6vw, 2.4rem); line-height: 1; margin: 0 0 1.1rem; }
+.popup-text { font-size: 1rem; color: rgba(255, 255, 255, .9); margin: 0 0 1.4rem; }
+.popup-cta { display: flex; gap: .7rem; flex-wrap: wrap; margin-bottom: 1rem; }
+.popup-note { font-family: var(--mono); font-size: .6rem; letter-spacing: .08em; color: var(--grey); margin: 0; }
+
+/* ---- Planificateur ---- */
+.planner-box { max-width: 640px; margin-top: 1.6rem; background: var(--coal); border: 1px solid var(--line); padding: 2rem; }
+.planner-q { font-family: var(--display); font-size: clamp(1.2rem, 3.2vw, 1.6rem); text-transform: uppercase; margin: 0 0 1.3rem; }
+.planner-opts { display: flex; flex-wrap: wrap; gap: .7rem; }
+.planner-opts button { font-family: var(--body); font-size: .92rem; font-weight: 500; color: var(--white); background: rgba(255, 255, 255, .05); border: 1px solid var(--line); padding: .85rem 1.2rem; cursor: pointer; transition: background .18s, border-color .18s, color .18s; }
+.planner-opts button:hover { background: var(--yellow); color: var(--black); border-color: var(--yellow); }
+.planner-r-label { font-family: var(--mono); font-size: .64rem; letter-spacing: .2em; text-transform: uppercase; color: var(--yellow); margin: 0 0 .6rem; }
+.planner-r-name { font-family: var(--display); text-transform: uppercase; font-size: clamp(1.5rem, 4vw, 2.1rem); margin: 0 0 .8rem; }
+.planner-r-text { color: var(--grey); font-size: .98rem; margin: 0 0 1.5rem; max-width: 55ch; }
+.planner-r-cta { display: flex; gap: .8rem; flex-wrap: wrap; }
+.planner-r-cta button.btn { font-family: var(--display); }
+
 /* ---- Liens footer ---- */
 .footer-nav { display: flex; flex-wrap: wrap; gap: .4rem 1.6rem; margin: 1.4rem 0; }
 .footer-nav a { font-family: var(--mono); font-size: .7rem; letter-spacing: .14em; text-transform: uppercase; color: var(--grey); text-decoration: none; }

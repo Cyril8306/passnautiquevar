@@ -1,0 +1,54 @@
+---
+import Base from '../layouts/Base.astro';
+import { site } from '../data/site';
+
+const title = 'Qui sommes-nous — Pass Nautique Var';
+const description =
+  "Pass Nautique Var, c'est un comptoir unique sur la plage de La Gaillarde, aux Issambres, adossé à un réseau qui pratique les activités nautiques sur la Côte d'Azur depuis plus de 30 ans.";
+
+const schema = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Accueil', item: site.domain },
+      { '@type': 'ListItem', position: 2, name: 'Qui sommes-nous', item: `${site.domain}/qui-sommes-nous/` },
+    ],
+  },
+];
+
+const content = `
+<p>Pass Nautique Var, c'est un principe simple porté par un comptoir : celui de <strong>La Gaillarde</strong>, sur la plage, aux Issambres. Un seul endroit pour réserver toutes les activités nautiques de l'Est-Var, au meilleur tarif.</p>
+
+<h2>Un réseau qui pratique la mer depuis plus de 30 ans</h2>
+<p>Le comptoir de La Gaillarde s'appuie sur un réseau de bases nautiques présent sur la Côte d'Azur depuis <strong>plus de 30 ans</strong>. Parc aquatique, ski nautique, parachute ascensionnel, bateau, kayak : ce ne sont pas des activités improvisées pour la saison, mais un savoir-faire construit sur plusieurs décennies, plage après plage, entre Agay et Pampelonne.</p>
+<p>Ce qui change avec Pass Nautique Var, ce n'est pas l'activité : c'est la façon d'y accéder. Un seul comptoir, une remise immédiate, un bon simple et sans complication.</p>
+
+<h2>Sur place, tout l'été</h2>
+<p>Derrière le comptoir de La Gaillarde, vous trouverez quelqu'un pour vous orienter selon votre profil : une famille avec de jeunes enfants, un groupe qui cherche des sensations, un couple qui veut juste une balade tranquille. Le rôle du comptoir est simple : vous faire gagner du temps et de l'argent sur des activités qui existent déjà et qui ont fait leurs preuves.</p>
+
+<h2>Notre méthode</h2>
+<ul>
+<li>Aucune réservation en ligne, aucun compte à créer : on se parle, en vrai, sur la plage.</li>
+<li>Un seul passage au comptoir pour organiser toute votre semaine, toutes activités confondues.</li>
+<li>Une remise de <strong>10 % immédiate</strong>, sans condition cachée.</li>
+<li>Un bon non daté à l'heure près, offrable, valable sur la base qui opère l'activité choisie.</li>
+</ul>
+
+<h2>Nous contacter</h2>
+<p>Une question avant de venir ? Le comptoir de La Gaillarde répond au <strong>${site.phone}</strong>, ou passez directement sur la plage aux Issambres.</p>
+`;
+---
+<Base title={title} description={description} path="/qui-sommes-nous/" schema={schema}>
+  <section class="content">
+    <div class="wrap">
+      <p class="eyebrow">Qui sommes-nous</p>
+      <h1>Le comptoir, et qui s'en occupe</h1>
+      <div class="prose" set:html={content}></div>
+      <div class="content-cta">
+        <a class="btn btn-y" href={site.mapsUrl} target="_blank" rel="noopener">Venir au comptoir</a>
+        <a class="btn btn-o" href={`tel:${site.phoneIntl}`}>Appeler le {site.phone}</a>
+      </div>
+    </div>
+  </section>
+</Base>

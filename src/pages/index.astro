@@ -1,6 +1,7 @@
 ---
 import Base from '../layouts/Base.astro';
 import Tape from '../components/Tape.astro';
+import Planner from '../components/Planner.astro';
 import { site, areaServed } from '../data/site';
 import { villes } from '../data/villes';
 
@@ -125,6 +126,8 @@ const schema = [
   </section>
 
   <Tape />
+
+  <Planner />
 
   <!-- ============ COMMENT ÇA MARCHE ============ -->
   <section class="steps">
