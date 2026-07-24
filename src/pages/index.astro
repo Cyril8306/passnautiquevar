@@ -2,6 +2,7 @@
 import Base from '../layouts/Base.astro';
 import Tape from '../components/Tape.astro';
 import { site, areaServed } from '../data/site';
+import { villes } from '../data/villes';
 
 const title = "Pass Nautique Var — Toutes les activités de l'Est-Var, −10 % au comptoir";
 const description =
@@ -174,7 +175,10 @@ const schema = [
           </div>
         </a>
 
-        <a class="card rv card--soon" href="/ski-nautique-wakeboard/">
+        <a class="card rv" href="/ski-nautique-wakeboard/">
+          <div class="ph scrim">
+            <img src="/media/act-ski.webp" alt="Ski nautique et wakeboard tractés derrière un bateau dans l'Est-Var" width="1080" height="1080" loading="lazy" />
+          </div>
           <div class="card-in">
             <span class="k">Glisse</span>
             <h3>Ski nautique &amp; wakeboard</h3>
@@ -182,7 +186,10 @@ const schema = [
           </div>
         </a>
 
-        <a class="card rv card--soon" href="/bateau-sans-permis/">
+        <a class="card rv" href="/bateau-sans-permis/">
+          <div class="ph scrim">
+            <img src="/media/act-bateau.webp" alt="Sortie en bateau sans permis au départ des Issambres, mer du golfe" width="1080" height="1350" loading="lazy" />
+          </div>
           <div class="card-in">
             <span class="k">Bateau</span>
             <h3>Bateau sans permis</h3>
@@ -198,7 +205,10 @@ const schema = [
           </div>
         </a>
 
-        <a class="card rv card--soon" href="/bouees-tractees/">
+        <a class="card rv" href="/bouees-tractees/">
+          <div class="ph scrim">
+            <img src="/media/act-bouees.webp" alt="Bouée tractée derrière un bateau dans l'Est-Var, face au massif de l'Estérel" width="1080" height="720" loading="lazy" />
+          </div>
           <div class="card-in">
             <span class="k">Sensations</span>
             <h3>Bouées tractées</h3>
@@ -208,7 +218,7 @@ const schema = [
 
         <a class="card rv" href="/kayak-paddle-pedalo/">
           <div class="ph scrim">
-            <img src="/media/card-kayak.webp" alt="Sortie en kayak au départ de La Gaillarde, vue depuis l'embarcation sur une mer turquoise" width="720" height="1280" loading="lazy" />
+            <img src="/media/act-pedalo.webp" alt="Pédalo sur l'eau devant la plage de La Gaillarde, aux Issambres" width="1080" height="720" loading="lazy" />
           </div>
           <div class="card-in">
             <span class="k">Sur place</span>
@@ -296,6 +306,22 @@ const schema = [
         </details>
       </div>
       <p style="margin-top:2.4rem"><a class="btn btn-o" href="/faq/">Voir toutes les questions →</a></p>
+    </div>
+  </section>
+
+  <!-- ============ VILLES ============ -->
+  <section>
+    <div class="wrap">
+      <div class="head rv">
+        <p class="eyebrow">Où que vous soyez</p>
+        <h2>Vos activités <span class="hl">près de chez vous</span></h2>
+        <p>De La Gaillarde à tout l'Est-Var, d'Agay à Pampelonne : les activités du réseau depuis votre lieu de vacances.</p>
+      </div>
+      <nav class="villes-grid rv" aria-label="Activités nautiques par ville">
+        {villes.map((v) => (
+          <a class="ville-link" href={`/activites-nautiques/${v.slug}/`}>{v.name}</a>
+        ))}
+      </nav>
     </div>
   </section>
 

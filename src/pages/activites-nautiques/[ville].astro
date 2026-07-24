@@ -1,0 +1,57 @@
+---
+import Base from '../../layouts/Base.astro';
+import { site } from '../../data/site';
+import { villes } from '../../data/villes';
+
+export function getStaticPaths() {
+  return villes.map((v) => ({ params: { ville: v.slug }, props: { v } }));
+}
+const { v } = Astro.props;
+
+const answered = v.faq.filter((f) => f.answered);
+const schema = [
+  ...(answered.length
+    ? [{
+        '@context': 'https://schema.org',
+        '@type': 'FAQPage',
+        mainEntity: answered.map((f) => ({
+          '@type': 'Question',
+          name: f.question,
+          acceptedAnswer: { '@type': 'Answer', text: f.answer },
+        })),
+      }]
+    : []),
+  {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Accueil', item: site.domain },
+      { '@type': 'ListItem', position: 2, name: `Activités nautiques à ${v.name}`, item: `${site.domain}/activites-nautiques/${v.slug}/` },
+    ],
+  },
+];
+---
+<Base title={v.title} description={v.description} path={`/activites-nautiques/${v.slug}/`} schema={schema}>
+  <section class="content">
+    <div class="wrap">
+      <p class="eyebrow">Activités nautiques · {v.name}</p>
+      <h1>{v.h1}</h1>
+      <div class="prose" set:html={v.contentHtml}></div>
+
+      <div class="faqpage" style="margin-top:2.6rem">
+        <p class="faq-name">Questions fréquentes</p>
+        {v.faq.map((f) => (
+          <details>
+            <summary><h2>{f.question}</h2></summary>
+            <div class="answer"><p>{f.answer}</p></div>
+          </details>
+        ))}
+      </div>
+
+      <div class="content-cta">
+        <a class="btn btn-y" href={site.mapsUrl} target="_blank" rel="noopener">Venir au comptoir</a>
+        <a class="btn btn-o" href={`tel:${site.phoneIntl}`}>Appeler le {site.phone}</a>
+      </div>
+    </div>
+  </section>
+</Base>

@@ -56,6 +56,8 @@ export const activites: Activite[] = [
   {
     slug: 'parachute-ascensionnel',
     name: 'Parachute ascensionnel',
+    image: '/media/card-parachute.webp',
+    imageAlt: "Parachute ascensionnel jaune au-dessus de la mer du golfe de Saint-Tropez",
     title: "Parachute ascensionnel golfe de Saint-Tropez -10 % La Gaillarde",
     description: "Parachute ascensionnel en mer dans le golfe de Saint-Tropez et l'Est-Var. Réservez au comptoir de La Gaillarde aux Issambres : -10 % immédiat, bon offrable.",
     h1: "Parachute ascensionnel en mer (golfe de Saint-Tropez et Est-Var) — réservez au comptoir de La Gaillarde",
@@ -94,6 +96,8 @@ export const activites: Activite[] = [
   {
     slug: 'ski-nautique-wakeboard',
     name: 'Ski nautique, wakeboard et baby-ski',
+    image: '/media/act-ski.webp',
+    imageAlt: "Ski nautique et wakeboard tractés derrière un bateau dans l'Est-Var",
     title: "Ski nautique & wakeboard Est-Var | -10 % au comptoir La Gaillarde",
     description: "Ski nautique, wakeboard et baby-ski en mer dans l'Est-Var. Réservez au comptoir de La Gaillarde aux Issambres : -10 % de remise immédiate, bon offrable.",
     h1: "Ski nautique, wakeboard et baby-ski dans l'Est-Var — réservez au comptoir de La Gaillarde (-10 %)",
@@ -131,6 +135,8 @@ export const activites: Activite[] = [
   {
     slug: 'bateau-sans-permis',
     name: 'Bateau sans permis et balade en bateau',
+    image: '/media/act-bateau.webp',
+    imageAlt: "Sortie en bateau sans permis au départ des Issambres, mer du golfe",
     title: "Bateau sans permis Les Issambres | -10 % La Gaillarde",
     description: "Louez un bateau sans permis ou partez en balade avec skipper au départ des Issambres et du golfe. Réservez au comptoir de La Gaillarde avec 10 % de remise.",
     h1: "Bateau sans permis et balade en bateau aux Issambres — comptoir de La Gaillarde",
@@ -166,6 +172,8 @@ export const activites: Activite[] = [
   {
     slug: 'bouees-tractees',
     name: 'Bouées tractées',
+    image: '/media/act-bouees.webp',
+    imageAlt: "Bouée tractée derrière un bateau dans l'Est-Var, face au massif de l'Estérel",
     title: "Bouée tractée Est-Var — comptoir La Gaillarde, -10 %",
     description: "Bouée tractée en mer dans l'Est-Var : version douce ou sportive. Réservez au comptoir de La Gaillarde, aux Issambres, avec 10 % de remise immédiate.",
     h1: "Bouée tractée en mer dans l'Est-Var — réservation au comptoir de La Gaillarde",
@@ -209,8 +217,8 @@ export const activites: Activite[] = [
   {
     slug: 'kayak-paddle-pedalo',
     name: 'Kayak, paddle et pédalo',
-    image: '/media/card-kayak.webp',
-    imageAlt: "Sortie en kayak au départ de la plage de La Gaillarde, aux Issambres",
+    image: '/media/act-paddle.webp',
+    imageAlt: "Cours de paddle au coucher du soleil sur la plage de La Gaillarde, aux Issambres",
     title: "Kayak, paddle, pédalo aux Issambres -10 % | La Gaillarde",
     description: "Louez kayak, paddle, paddle géant et pédalo sur la plage de La Gaillarde aux Issambres. Réservation au comptoir avec -10 % de remise immédiate.",
     h1: "Kayak, paddle et pédalo sur la plage de La Gaillarde (Les Issambres) — réservation au comptoir avec -10 %",

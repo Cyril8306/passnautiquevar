@@ -282,6 +282,11 @@ footer a { color: var(--yellow); }
 .activity-hero { margin: 0 0 2.2rem; aspect-ratio: 16 / 9; overflow: hidden; border: 1px solid var(--line); }
 .activity-hero img { width: 100%; height: 100%; object-fit: cover; }
 
+/* ---- Liens villes ---- */
+.villes-grid { display: flex; flex-wrap: wrap; gap: .7rem; margin-top: 1.2rem; }
+.ville-link { display: inline-block; font-family: var(--mono); font-size: .72rem; letter-spacing: .1em; text-transform: uppercase; color: var(--white); text-decoration: none; border: 1px solid var(--line); padding: .7rem 1.1rem; border-radius: 100px; transition: background .18s, color .18s, border-color .18s; }
+.ville-link:hover { background: var(--yellow); color: var(--black); border-color: var(--yellow); }
+
 /* ---- Liens footer ---- */
 .footer-nav { display: flex; flex-wrap: wrap; gap: .4rem 1.6rem; margin: 1.4rem 0; }
 .footer-nav a { font-family: var(--mono); font-size: .7rem; letter-spacing: .14em; text-transform: uppercase; color: var(--grey); text-decoration: none; }
